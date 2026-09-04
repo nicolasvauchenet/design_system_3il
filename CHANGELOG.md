@@ -6,6 +6,8 @@ Le format s’inspire de Keep a Changelog et le projet suit les principes du ver
 
 ## [Non publié]
 
+- Support Portfolio et contribution open source : relecture des 27 sources, corrections techniques et éditoriales, Word complet avec ateliers et pistes de correction, PowerPoint de projection avec fiches complètes en notes. Répartition explicite entre oral et livrables écrits. Réemploi des gabarits Office 3iL, sans modification du contrat web.
+
 - Relecture éditoriale du catalogue HTML : suppression du bloc final « La suite », introduction orientée réutilisation, clarification des simulations et des usages des badges, cartes, boutons et alertes. Cartes alignées sur leurs destinations, valeurs typographiques corrigées et validation du code étudiant décrite comme un contrôle de format. Composants et ancres conservés.
 
 - Cours UML : ajout des 12 corrigés avec schémas dans une troisième annexe séparée en fin de Word, navigation interne et retour aux énoncés. Dossier Office UML réduit aux deux documents finaux, nommés `3iL-UML-Cours.docx` et `3iL-UML-Presentation.pptx` ; présentation inchangée sur le fond.

@@ -17,7 +17,7 @@ Le projet utilise uniquement **HTML5, CSS3 et JavaScript ES6**. Il fonctionne sa
 ## Démarrage rapide
 
 ```powershell
-cd C:\Users\VAUCHE\Dev\design_system_3il
+cd design_system_3il
 npm run check
 npm run build
 ```
@@ -47,6 +47,8 @@ assets/     ─┘
 ## Supports Office
 
 Le premier cours pilote est disponible en [Word](office/UML/3iL-UML-Cours.docx) et [PowerPoint](office/UML/3iL-UML-Presentation.pptx). Le Word contient les 12 exercices et leurs corrigés dans une annexe séparée en fin de document. Le PowerPoint conserve les énoncés sans corrigés. Le dossier de livraison ne contient que ces deux documents ; les sources techniques restent dans `scripts/office-uml/`. Ces fichiers s’utilisent directement dans Office bureau, indépendamment du `dist/` web. La fabrication est documentée dans [scripts/office-uml/FABRICATION.md](scripts/office-uml/FABRICATION.md).
+
+Le cours Portfolio et contribution open source est disponible en [Word](office/Portfolio/3iL-Portfolio-Cours.docx) et [PowerPoint](office/Portfolio/3iL-Portfolio-Presentation.pptx). Il reprend les cinq parties du cours relu et corrigé. Le Word contient les ateliers et les pistes de correction en annexe ; le PowerPoint propose une synthèse de projection et les fiches complètes dans les notes. L’oral reste centré sur le portfolio et la contribution, les autres domaines étant évalués à l’écrit. Voir le [dossier de fabrication et de relecture](scripts/office-portfolio/FABRICATION.md).
 
 ## Version du Design System
 
