@@ -3,5 +3,9 @@ tmp/
 dist/
 office/*
 !office/Gabarits/
+scripts/*
+!scripts/build.mjs
+!scripts/check-dialogs.mjs
+!scripts/check.mjs
 .DS_Store
 node_modules/
