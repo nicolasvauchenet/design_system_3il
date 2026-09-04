@@ -1,0 +1,146 @@
+[
+  {
+    "title": "Cas d’utilisation — Gestion d’événements",
+    "source": 9,
+    "sections": [
+      ["Périmètre et acteurs", "La frontière représente la plateforme, pas l’entreprise. L’organisateur client et le coordinateur de l’agence sont des acteurs humains : même employé de l’agence, le coordinateur reste extérieur au logiciel. Le participant est un acteur s’il répond aux invitations ou transmet une évaluation. Un service de messagerie est un acteur secondaire si l’envoi est délégué à un système distinct."],
+      ["Fonctionnalités attendues", "L’organisateur planifie l’événement, renseigne ses besoins, valide le programme et consulte le bilan. Le coordinateur recherche un lieu, coordonne les fournisseurs, gère les invitations, échange avec l’équipe et produit le bilan. Le participant répond à l’invitation et évalue l’événement. Les outils de collaboration sont regroupés dans « Échanger avec l’équipe »."],
+      ["Hypothèses du modèle proposé", "Le client valide le programme préparé avec l’agence ; les participants utilisent la plateforme pour répondre. Ces responsabilités ne sont pas entièrement définies par l’énoncé : une autre répartition argumentée est recevable. Aucun paiement, rôle administrateur ou prestataire directement connecté n’est imposé."],
+      ["Justification des relations", "Les associations relient les acteurs à leurs objectifs. « Gérer les invitations » inclut « Envoyer les invitations » dans le scénario proposé ; le service de messagerie participe à ce dernier. Les autres cas ne sont pas reliés artificiellement par include : une succession dans le temps ne suffit pas à créer une inclusion."],
+      ["Critères de réussite", "Frontière explicite, acteurs hors du système, objectifs dans des ellipses, responsabilités cohérentes et absence de flèches de flux entre les cas. Les variantes de nommage sont acceptables si elles couvrent la planification, la coordination, les échanges et le bilan."]
+    ],
+    "diagram": "use-events"
+  },
+  {
+    "title": "Cas d’utilisation — Bibliothèque",
+    "source": 10,
+    "sections": [
+      ["Acteurs", "Acteur interne à l’organisation : bibliothécaire. Acteur externe : lecteur. Acteur système : service de notification externe. Ils sont tous extérieurs à la frontière du logiciel de bibliothèque. Le temps ou un traitement interne ne doivent pas devenir artificiellement des acteurs externes."],
+      ["Domaines fonctionnels", "Catalogue : le bibliothécaire ajoute, modifie et retire les livres. Prêt : le lecteur demande un emprunt ; le bibliothécaire enregistre l’emprunt et le retour. Suivi : le système repère les prêts à échéance et transmet un rappel au lecteur par le service de notification."],
+      ["Précondition et inclusion", "« Enregistrer un emprunt » inclut « Vérifier la disponibilité » : le contrôle est exécuté à chaque enregistrement et l’emprunt ne réussit que si un exemplaire est disponible. La garde n’est pas une flèche entre l’acteur et le cas ; le refus relève du scénario alternatif. « Envoyer un rappel » est un objectif de suivi distinct, pas une extension automatique de l’emprunt."],
+      ["Hypothèses", "Le titre évoque une réservation, mais les besoins détaillés demandent surtout un emprunt. Le modèle minimal couvre ces besoins. Une réservation anticipée peut être ajoutée en variante, avec son propre cycle de vie, sans la confondre avec l’emprunt. Le service de notification est supposé externe pour satisfaire le rôle système demandé."],
+      ["Critères de réussite", "Trois catégories d’acteurs identifiées, couverture des trois domaines, contrôle obligatoire de disponibilité et distinction entre un acteur de l’organisation et une partie du logiciel."]
+    ],
+    "diagram": "use-library"
+  },
+  {
+    "title": "Activité — Planification d’un événement",
+    "source": 11,
+    "sections": [
+      ["Déroulement", "Après le nœud initial, l’organisateur sélectionne le type d’événement, recherche un lieu et contrôle sa disponibilité ainsi que son coût. Si le lieu ne convient pas, la recherche reprend. Une fois le lieu retenu, il configure la date, l’horaire, les invités et les services, puis soumet le programme au client."],
+      ["Validation et reprise", "La décision de validation a deux issues exclusives : [approuvé] mène à la finalisation ; [à modifier] reprend le choix du lieu et la configuration. Le schéma retient une reprise large qui revérifie la disponibilité avant chaque nouvelle proposition. Les retours sont réunis par une fusion. La fin signifie que les préparatifs peuvent commencer, pas que l’événement a déjà eu lieu."],
+      ["Responsabilités", "L’organisateur construit la proposition ; le client l’approuve. Des partitions peuvent rendre cette distinction visible. La plateforme assiste les saisies et les contrôles, mais ne décide pas à la place du client."],
+      ["Hypothèse", "Le type d’événement est une donnée sélectionnée : il n’est pas nécessaire de créer une branche par type tant que l’énoncé ne décrit pas de traitements différents. Si la reconfiguration change la date ou le lieu, il faut revenir au contrôle de disponibilité avant une nouvelle validation."],
+      ["Critères de réussite", "Nœuds initial et final corrects, actions verbales, gardes sur les décisions, boucles de reprise lisibles et aucune fourche de parallélisme sans activités réellement concurrentes."]
+    ],
+    "diagram": "activity-events"
+  },
+  {
+    "title": "Activité — Commande en ligne",
+    "source": 12,
+    "sections": [
+      ["Scénario nominal", "Le client compose son panier et passe à la caisse. Le système vérifie tous les articles. Si le stock est suffisant, le client renseigne la livraison et le paiement ; le système traite le paiement, confirme la commande et envoie l’accusé de réception."],
+      ["Alternative : article indisponible", "La garde [au moins un article indisponible] conduit à l’information du client, puis à la modification du panier. Le passage en caisse et le contrôle de disponibilité sont repris. La sortie [tous disponibles] seule autorise la suite."],
+      ["Alternative : paiement refusé", "Après traitement, [refusé] conduit à informer le client et à demander de nouvelles informations de paiement. La boucle revient au traitement du paiement, sans confirmer la commande. [accepté] conduit à la confirmation. Les deux points de reprise utilisent une fusion, pas une jonction."],
+      ["Périmètre", "Le scénario s’arrête à l’accusé de réception. La préparation et la livraison ne font pas partie de cet exercice ; le parallélisme étudié ailleurs dans le cours n’est donc pas ajouté ici. L’abandon, la réservation temporaire du stock et la protection contre un double paiement sont des extensions à définir pour un système réel."],
+      ["Critères de réussite", "Les deux boucles sont présentes, aucune commande n’est confirmée après refus, le contrôle concerne tout le panier et les gardes couvrent les deux résultats possibles sans ambiguïté."]
+    ],
+    "diagram": "activity-order"
+  },
+  {
+    "title": "Séquence — Programmation d’une conférence",
+    "source": 13,
+    "sections": [
+      ["Participants à l’interaction", "Les lignes de vie sont organisateur:Organisateur, plateforme:Plateforme, messagerie:ServiceMail et participant:Participant. La quatrième rend explicites les invitations et les réponses demandées dans l’énoncé. Le service mail est supposé capable de collecter les réponses ; un simple serveur SMTP ne suffirait pas à lui seul."],
+      ["Messages attendus", "L’organisateur demande la création ; la plateforme renvoie la liste des participants potentiels. L’organisateur transmet sa sélection. La plateforme demande l’envoi des invitations au service mail, qui contacte chaque participant. Chaque réponse reçue est transmise à la plateforme et enregistrée."],
+      ["Fragments et décisions", "Un fragment loop couvre les invitations aux personnes sélectionnées. Un second loop couvre les réponses reçues jusqu’à la clôture ; dans un alt, [accepte] ajoute une participation confirmée et [décline] enregistre un refus. Après clôture, la plateforme compile les acceptations et les horaires, puis les soumet à l’organisateur. Un alt distingue [validé] et [à modifier] ; en cas de modification, la proposition est revue et soumise de nouveau."],
+      ["Hypothèses nécessaires", "La collecte se termine à une échéance fixée par l’organisateur ; l’absence de réponse ne vaut pas acceptation. Les horaires de passage sont des données préparées par la plateforme puis validées, sans supposer d’algorithme de planification particulier. Les confirmations finales sont envoyées uniquement aux participants retenus après validation."],
+      ["Lecture du schéma", "La figure représente un scénario nominal avec une personne qui accepte. Les répétitions et alternatives ci-dessus complètent cette trace ; le schéma seul ne représente pas tous les chemins. Les notifications mail sont asynchrones et aucune croix de destruction ne clôt les acteurs persistants."]
+    ],
+    "diagram": "sequence-conference"
+  },
+  {
+    "title": "Séquence — Distributeur automatique",
+    "source": 14,
+    "sections": [
+      ["Authentification", "Après insertion de la carte, l’ATM demande le PIN et transmet la vérification au service d’authentification. Celui-ci consulte les données nécessaires et renvoie un résultat. Le fragment loop autorise au plus trois saisies au total, pas trois tentatives supplémentaires. [PIN correct] ouvre le choix d’opération ; [PIN incorrect et essais < 3] redemande le PIN ; [troisième échec] retient la carte et termine l’interaction sans opération bancaire."],
+      ["Retrait", "Le client saisit un montant. L’ATM vérifie le solde et la possibilité matérielle de distribuer les billets. Dans alt, [fonds insuffisants ou billets indisponibles] affiche un refus sans débit ; [autorisé] enregistre le débit puis distribue les billets. Le débit est atomique avec le contrôle des fonds côté système de compte. Une panne de distribution exige une annulation ou une compensation du débit : le scénario nominal ne suffit pas à traiter cette erreur."],
+      ["Dépôt et consultation", "Pour un dépôt, l’ATM recueille les billets, détermine le montant accepté, obtient la confirmation puis demande l’enregistrement du crédit ; aucun montant saisi seul ne déclenche le crédit. Pour la consultation, il demande le solde et l’affiche, sans modification du compte. Ces opérations constituent les autres branches du fragment alt de sélection."],
+      ["Clôture et périmètre", "Après une opération terminée ou refusée, l’ATM affiche le résultat et rend la carte. La rétention après trois PIN incorrects est l’exception explicitement demandée. Le modèle conserve les quatre participants de l’énoncé ; dans une architecture détaillée, un service de compte encapsulerait l’accès à la base de données."],
+      ["Lecture du schéma", "La figure illustre uniquement un retrait réussi après authentification au premier essai. Le corrigé complet comprend aussi les boucles et branches détaillées ci-dessus. Ne pas afficher ni journaliser le PIN en clair dans les messages ou les attributs du modèle."]
+    ],
+    "diagram": "sequence-atm"
+  },
+  {
+    "title": "Classes — Gestion d’événements",
+    "source": 15,
+    "sections": [
+      ["Noyau de planification", "Evenement : id, debut, fin, type, statut ; creer(), modifier(), annuler(). Lieu : id, nom, adresse, capacite ; verifierDisponibilite(debut, fin). ReservationLieu : id, debut, fin, statut ; reserver(), annuler(). Chaque réservation concerne exactement un événement et un lieu ; un événement peut être encore sans réservation ou en avoir plusieurs."],
+      ["Participation", "Participant : id, nom, email ; mettreAJourContact(). Inscription : id, date, statut ; inscrire(), confirmer(), annuler(). Chaque inscription relie un participant à un événement ; les deux peuvent avoir zéro à plusieurs inscriptions. Le statut d’inscription appartient à Inscription, pas à Participant : une même personne peut être confirmée à une conférence et en attente à une autre."],
+      ["Communication", "FilCommunication : id, canal, archive ; ajouterMessage(), archiver(). Message : id, contenu, dateEnvoi ; envoyer(), recevoir(). Un fil concerne un événement et contient plusieurs messages. Chaque message a un expéditeur Participant et un ou plusieurs destinataires Participant ; les rôles d’extrémité distinguent ces deux associations. Hypothèse : organisateurs et intervenants qui écrivent sont également représentés par Participant, au sens large de personne inscrite sur la plateforme."],
+      ["Budget et évaluation", "Budget : id, montantPrevisionnel, /depensesReelles ; ajouterDepense(), produireRapport(). Depense : id, libelle, montant, date. Evaluation : id, note, commentaire, date ; enregistrer(). Un événement possède au plus un budget ; un budget regroupe des dépenses. Une évaluation concerne une inscription. Le total réel et les analyses sont calculés à partir des dépenses et évaluations, pas stockés en doublon sans nécessité."],
+      ["Contraintes et variantes", "Unicité de (participant, événement), fin > début, capacité respectée, aucune réservation active du même lieu sur des créneaux incompatibles ; une évaluation par inscription dans ce modèle. Le titre de rubrique mentionne la facturation sans règles détaillées : Facture(id, date, montant, statut) et son association à l’événement sont une extension possible, pas une obligation déductible. Le schéma donne les associations du noyau ; les attributs et opérations sont détaillés ci-dessus."]
+    ],
+    "diagram": "classes-events"
+  },
+  {
+    "title": "Classes — Bibliothèque",
+    "source": 16,
+    "sections": [
+      ["Classes du sujet", "Lecteur : identifiant, nom, email ; emprunterLivre(), retournerLivre(). Bibliothecaire : identifiant, nom, email ; enregistrerEmprunt(), enregistrerRetour(), envoyerRappel(). Bibliotheque : id, nom, adresse ; ajouterLivre(), retirerLivre(), rechercherLivre(). Livre : id, titre, auteur ; consulterNotice(). Les identifiants supplémentaires servent à distinguer les objets de manière stable."],
+      ["Exemplaires et réservations", "Le modèle détaillé distingue Livre, notice bibliographique, et Exemplaire, copie physique : id, statut ; definirStatut(). Une bibliothèque possède zéro à plusieurs exemplaires ; chaque exemplaire correspond à un livre. Reservation : id, date, statut ; confirmer(), annuler(). Elle relie exactement un lecteur et un livre. Une version simplifiée où Livre représente directement une copie physique est acceptable si ce choix est explicite et cohérent."],
+      ["Emprunts et rappels", "Emprunt : id, dateEmprunt, dateRetourPrevue, dateRetourReelle optionnelle ; verifierStatut(). Il relie exactement un lecteur et un exemplaire ; chacun peut avoir plusieurs emprunts dans l’historique. Rappel : id, dateRappel, message, statut ; planifier(), envoyer(), annuler(). Chaque rappel concerne un emprunt ; un emprunt peut n’en avoir aucun ou en avoir plusieurs."],
+      ["Responsabilités et cardinalités", "Dans ce modèle, chaque emprunt est enregistré par un bibliothécaire ; un bibliothécaire peut en enregistrer plusieurs. Les associations vers Lecteur et Exemplaire remplacent des attributs objet redondants dans Emprunt. Le schéma montre le noyau et ses multiplicités ; les opérations et attributs sont précisés ci-dessus."],
+      ["Contraintes", "Un exemplaire ne peut avoir qu’un emprunt non rendu à un instant donné. dateRetourPrevue ≥ dateEmprunt ; dateRetourReelle absente ou ≥ dateEmprunt. Le stock disponible est dérivé des exemplaires et prêts actifs. Une réservation n’est pas encore un prêt ; son annulation ne constitue pas un retour. Les rappels restant planifiés sont annulés après restitution."]
+    ],
+    "diagram": "classes-library"
+  },
+  {
+    "title": "Communication — Emprunt d’un livre",
+    "source": 17,
+    "sections": [
+      ["Objets", "john:Lecteur porte nom = John Doe ; alice:Bibliothecaire porte nom = Alice Smith ; livre:Livre porte titre = Les Misérables, auteur = Victor Hugo, statut = disponible. emprunt:Emprunt représente la transaction. Les noms instance:Classe sont soulignés dans le diagramme."],
+      ["Messages numérotés", "1 : john → alice, demanderEmprunt(livre). 1.1 : alice → livre, verifierDisponibilite(). 1.2 [disponible] : alice → emprunt, enregistrer(john, livre). 1.2.1 : emprunt → livre, definirStatut(emprunte). 1.2.2 : emprunt → john, confirmerEmprunt(). La numérotation exprime l’ordre et l’imbrication des appels ; la disposition spatiale ne représente pas le temps."],
+      ["Préconditions et effet", "Le scénario fourni suppose la disponibilité et un lecteur autorisé à emprunter. L’enregistrement et la mise à jour du statut forment une opération cohérente : une confirmation ne doit pas précéder leur succès. Si le livre est indisponible, l’enregistrement et la confirmation sont omis ; Alice informe John du refus."],
+      ["Choix de modélisation", "Le sujet impose que la confirmation parte d’Emprunt vers Lecteur. Cette interaction est conservée ici comme modèle pédagogique. Dans une architecture logicielle plus détaillée, un service de prêt ou de notification pourrait porter cette responsabilité. La transaction peut être créée par le message d’enregistrement, ou représentée comme un objet provisoire déjà existant ; le schéma retient ce second choix."],
+      ["Critères de réussite", "Quatre objets identifiables, liens entre les objets qui échangent, messages orientés et numérotés, garde de disponibilité et confirmation après enregistrement. Une liste de classes sans messages n’est pas un diagramme de communication."]
+    ],
+    "diagram": "communication"
+  },
+  {
+    "title": "États-transitions — Transaction d’emprunt",
+    "source": 18,
+    "sections": [
+      ["Objet suivi", "La machine décrit l’état d’une transaction, pas celui de tout le système et pas le cycle complet du livre jusqu’au retour. La demande est déjà soumise lorsque l’instance entre dans DemandeSoumise. L’état final signifie que le traitement de cette demande est terminé."],
+      ["Chemin nominal", "Initial → DemandeSoumise ; traiterDemande → VerificationDisponibilite. L’activité do / verifierDisponibilite produit un résultat. Sa fin mène à un pseudo-état de choix : [disponible] → EnregistrementEmprunt. L’activité do / enregistrerEmprunt s’achève et mène à ConfirmationEmprunt, qui exécute entry / envoyerConfirmation. L’événement confirmationRecue termine la transaction."],
+      ["Refus", "La seconde sortie du choix porte [else] et mène à EmpruntRefuse, avec entry / notifierRefus. La fin du traitement de cet état mène à l’état final. Le refus ne passe ni par EnregistrementEmprunt ni par ConfirmationEmprunt."],
+      ["État, événement et action", "Les noms imposés par l’énoncé sont conservés. Les actions de vérification et d’enregistrement sont des comportements do à l’intérieur des états, pas des états supplémentaires. Une transition s’écrit événement [garde] / effet lorsque ces éléments sont utiles ; une transition de complétion peut être sans événement explicite."],
+      ["Hypothèses et limites", "Le modèle suppose que le destinataire accuse réception de la confirmation. Sans accusé de réception observable, l’événement final doit être confirmationEnvoyee plutôt que confirmationRecue. Les pannes de stockage, erreurs de notification et délais d’attente seraient des chemins supplémentaires à préciser, sans les inventer comme exigences."]
+    ],
+    "diagram": "states"
+  },
+  {
+    "title": "Entité-relation — Gestion d’événements",
+    "source": 19,
+    "sections": [
+      ["Entités et attributs", "EVENEMENT(id_evenement, debut, fin, type, statut) ; LIEU(id_lieu, nom, adresse, capacite) ; RESERVATION_LIEU(id_reservation, debut, fin, statut) ; PARTICIPANT(id_participant, nom, email) ; INSCRIPTION(id_inscription, date_inscription, statut) ; MESSAGE(id_message, contenu, date_envoi) ; DESTINATION_MESSAGE(id_message, id_participant) ; BUDGET(id_budget, montant_previsionnel) ; DEPENSE(id_depense, libelle, montant, date) ; EVALUATION(id_evaluation, note, commentaire, date). Les attributs id sont les identifiants ; DESTINATION_MESSAGE a un identifiant composé."],
+      ["Associations", "Chaque réservation relie un événement et un lieu ; chacun peut avoir plusieurs réservations ou aucune. Une inscription relie un événement et un participant. Chaque message concerne un événement et un expéditeur ; l’association de destination permet plusieurs destinataires. Un événement possède zéro ou un budget ; chaque budget concerne un événement et regroupe zéro à plusieurs dépenses. Une évaluation concerne une inscription, au plus une dans ce modèle."],
+      ["Contraintes d’intégrité", "Unicité de (id_evenement, id_participant) dans INSCRIPTION et de id_evenement dans BUDGET. Unicité de id_inscription dans EVALUATION. Au moins un destinataire par message ; expéditeur et destinataires autorisés sur l’événement. Toute clé étrangère référence un enregistrement existant. Aucune réservation active incompatible sur le même lieu ; fin > début, capacité respectée et montants non négatifs pour les dépenses ordinaires."],
+      ["Passage au relationnel", "Les identifiants des entités côté un sont reportés comme clés étrangères dans l’entité côté plusieurs : par exemple RESERVATION_LIEU reçoit id_evenement et id_lieu, INSCRIPTION reçoit id_evenement et id_participant, DEPENSE reçoit id_budget. Les associations plusieurs-à-plusieurs sont matérialisées par INSCRIPTION et DESTINATION_MESSAGE. Les rapports et les sommes de dépenses sont des résultats de requêtes ; une entité Rapport n’est utile que si un instantané doit être conservé."],
+      ["Portée", "Les cardinalités de la figure s’expriment en nombre d’objets reliés à l’extrémité indiquée ; c’est une vue conceptuelle compacte, pas une notation Merise de participation. Le titre de la rubrique budgétaire ne définit pas les règles de facture : une extension FACTURE nécessite notamment de préciser client, lignes, taxes et cycle de paiement. Ces règles ne sont pas supposées acquises."]
+    ],
+    "diagram": "er-events"
+  },
+  {
+    "title": "Entité-relation — Gestion universitaire",
+    "source": 20,
+    "sections": [
+      ["Entités principales", "ETUDIANT(id_etudiant, nom, adresse, telephone) ; ENSEIGNANT(id_enseignant, nom, specialisation, coordonnees) ; DEPARTEMENT(id_departement, nom) ; COURS(code_cours, nom, description, credits, heures_semaine) ; SALLE(id_salle, capacite, emplacement) ; EQUIPEMENT(id_equipement, libelle). POSSESSION relie une salle à un équipement et porte quantite. Les identifiants sont les premiers attributs."],
+      ["Offre de cours et emploi du temps", "OFFRE_COURS(id_offre, annee, semestre, groupe) représente une occurrence de COURS. INSCRIPTION(id_etudiant, id_offre, date_inscription) associe les étudiants aux offres ; AFFECTATION(id_enseignant, id_offre) associe les enseignants aux offres. SEANCE(id_seance, debut, fin) concerne une offre et une salle. Ce niveau évite de confondre un cours du catalogue, son ouverture annuelle et chacun de ses créneaux."],
+      ["Hypothèses de cardinalité", "Chaque étudiant et chaque enseignant sont rattachés à un département ; un département peut en avoir plusieurs ou aucun. Chaque cours est proposé par un département. Chaque département a un directeur, choisi parmi ses enseignants, et un enseignant dirige au plus un département. Une offre peut recevoir plusieurs enseignants et étudiants ; elle peut encore n’en avoir aucun pendant sa préparation. Chaque séance se déroule dans une seule salle."],
+      ["Intégrité", "Unicité des couples étudiant/offre, enseignant/offre et salle/équipement. Le directeur appartient au département dirigé. Pas de chevauchement de séances dans une même salle ; pas de conflit pour un enseignant affecté aux séances concernées. Capacité de salle suffisante, fin > début, quantités et crédits non négatifs. Le modèle suppose une participation de tout le groupe à chaque séance ; des sous-groupes ou enseignants par séance demanderaient une association supplémentaire."],
+      ["Variantes recevables", "Plusieurs départements de spécialisation, codirection, cours mutualisés et enseignement à distance sont possibles, mais non exigés. Une association directe COURS–SALLE ne suffit pas à gérer les créneaux ; une liste de salles dans un attribut de COURS ne remplace pas les relations. La figure présente le noyau temporel et académique ; POSSESSION et la direction sont détaillées ici pour ne pas surcharger le dessin."]
+    ],
+    "diagram": "er-university"
+  }
+]

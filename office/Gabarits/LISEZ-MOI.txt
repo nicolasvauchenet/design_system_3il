@@ -1,0 +1,72 @@
+GABARITS PÉDAGOGIQUES 3iL — VERSION 1.0.0
+Word et PowerPoint bureau — 4 septembre 2026
+
+DÉMARRER EN DEUX MINUTES
+
+1. Décompressez le kit dans un dossier de votre ordinateur.
+2. Double-cliquez sur le modèle .dotx (Word) ou .potx (PowerPoint).
+3. Enregistrez votre travail sous un nouveau nom en .docx ou .pptx.
+4. Remplacez les textes entre crochets ; supprimez les blocs inutiles.
+
+Les fichiers .dotx et .potx sont de vrais modèles, sans macro.
+Les versions .docx et .pptx contiennent les mêmes exemples et servent de
+solution de repli : faites « Enregistrer sous » avant de les modifier.
+Le kit ne requiert ni Codex, ni IA, ni installation complémentaire.
+
+WORD
+
+Le gabarit contient 7 pages : couverture, notice enseignant supprimable,
+sommaire et objectifs, chapitre type, tableau/figure/code, exercice, annexes.
+
+- Collez votre cours avec « Conserver uniquement le texte ».
+- Appliquez les styles depuis Accueil > Styles : Titre 1, Titre 2,
+  Titre 3 et Normal ; les styles 3iL servent aux encadrés, listes et code.
+- Titre 1 alimente le sommaire des grandes parties. Pour mettre le sommaire
+  à jour : clic droit > Mettre à jour les champs > Toute la table.
+- Dupliquez un chapitre ou un exercice existant ; ajustez ses numéros.
+  Les numéros de chapitres et de légendes sont des exemples à adapter.
+- Pour redémarrer une liste d’étapes : clic droit sur son numéro >
+  Recommencer à 1. La numérotation des listes est native Word.
+- Insérez les images avec l’habillage « Aligné sur le texte », sans dépasser
+  la largeur du texte (17 cm), et ajoutez une légende ainsi qu’un texte alternatif.
+- Après modification : Ctrl+A puis F9. L’année du pied de page et les numéros
+  de page sont des champs. Vérifiez les sauts de page avant export PDF.
+- Supprimez la page « Prise en main · enseignant » avant diffusion.
+
+POWERPOINT
+
+10 diapositives à dupliquer : couverture, objectifs, chapitre, notion,
+méthode, illustration/tableau, code, exercice, synthèse et ressources.
+
+- Le plus simple : sélectionnez une vignette puis Ctrl+D et remplacez le texte.
+- Pour une page neuve : Accueil > Nouvelle diapositive, puis une disposition
+  dont le nom commence par « 3iL ». Les titres et contenus sont des espaces
+  réservés natifs ; les logos sont hérités des masques.
+- Le volet Notes contient les conseils d’utilisation de chaque type.
+- Pour les visuels, utilisez l’espace réservé de la diapositive Illustration
+  ou Insertion > Images / Tableau / Graphique. Remplacez le texte d’exemple.
+- Gardez un titre court et trois ou quatre idées par diapositive.
+  Si cela ne tient plus, dupliquez la diapositive plutôt que de réduire la police.
+- Les pages ne portent pas de numéro figé : cela évite les doublons après copie.
+- Relisez les notes avant de transmettre le PPTX : elles font partie du fichier.
+  Ne placez pas de corrigé confidentiel dans la version destinée aux étudiants.
+
+AVANT DIFFUSION
+
+Remplacez tous les crochets ; retirez les exemples inutiles ; contrôlez les
+sources, les images et les tableaux ; vérifiez le résultat en plein écran ou
+en aperçu avant impression. Ne modifiez pas les logos.
+
+Pour une diffusion figée, exportez votre travail en PDF depuis Office.
+Gardez le .docx ou le .pptx pour les prochaines mises à jour.
+
+ÉVOLUTION AVEC L’IA
+
+Fournissez une copie du gabarit et le cours à intégrer. Demandez explicitement
+de conserver les styles/masques, de ne pas inventer de contenu, de signaler
+les ambiguïtés et de distinguer les consignes de l’enseignant du texte source.
+Validez le fond et le rendu avant diffusion : l’IA ne remplace pas la relecture.
+
+Recette : fichiers OOXML et relations contrôlés, rendus Word/PowerPoint
+inspectés. Une ouverture de contrôle dans votre version d’Office bureau
+reste recommandée avant une distribution à grande échelle.

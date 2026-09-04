@@ -1,0 +1,7 @@
+.source-audit/
+tmp/
+dist/
+office/*
+!office/Gabarits/
+.DS_Store
+node_modules/

@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="La bibliothèque de composants et de styles numériques de 3iL.">
+    <meta name="theme-color" content="#005067">
+    <title>3iL Design System</title>
+    <link rel="icon" type="image/png" href="assets/logos/logo-3il-xs.png">
+    <link rel="apple-touch-icon" href="assets/logos/logo-3il-xs.png">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+    <header class="site-header">
+      <a class="brand" href="#introduction" aria-label="3iL Design System, accueil">
+        <img class="brand-logo-full" src="assets/logos/3il-horizontal.png" data-logo-light="assets/logos/3il-horizontal.png" data-logo-dark="assets/logos/3il-horizontal-white.png" alt="3iL Ingénieurs">
+        <img class="brand-logo-xs" src="assets/logos/logo-3il-xs.png" alt="">
+      </a>
+      <div class="site-name">Design System <small>v1.0.0</small></div>
+      <nav class="top-nav" aria-label="Navigation principale">
+        <a href="#fondations">Fondations</a>
+        <a href="#structure">Structure</a>
+        <a href="#contenu">Contenu</a>
+        <a href="#formulaires">Formulaires</a>
+        <a href="#interactions">Interactions</a>
+        <a href="#pedagogie">Pédagogie</a>
+      </nav>
+      <div class="header-actions">
+        <label class="search-control">
+          <span aria-hidden="true">⌕</span>
+          <span class="sr-only">Filtrer les composants</span>
+          <input id="component-search" type="search" placeholder="Rechercher…" autocomplete="off">
+        </label>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Activer le thème sombre" title="Changer de thème">◐</button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="side-nav">Menu</button>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="side-nav">
+      <button class="sidebar-collapse" id="sidebar-collapse" type="button" aria-expanded="true" aria-controls="side-nav">
+        <span aria-hidden="true">‹</span><strong>Réduire</strong>
+      </button>
+      <nav aria-label="Sommaire de la documentation">
+        <p class="nav-label">1. Introduction</p>
+        <a class="active" href="#introduction" data-short="I">Introduction</a>
+        <a href="#principes" data-short="P">Principes</a>
+        <p class="nav-label">2. Fondations</p>
+        <a href="#couleurs" data-short="C">Couleurs</a>
+        <a href="#typographie" data-short="T">Typographie</a>
+        <a href="#liens" data-short="Ln">Liens</a>
+        <a href="#espacements" data-short="E">Espacements</a>
+        <p class="nav-label">3. Structure</p>
+        <a href="#conteneurs" data-short="Ct">Conteneurs</a>
+        <a href="#grilles" data-short="Gr">Grilles</a>
+        <a href="#hero-institutionnel" data-short="He">Hero institutionnel</a>
+        <p class="nav-label">4. Contenu</p>
+        <a href="#listes" data-short="Li">Listes structurées</a>
+        <a href="#timelines" data-short="Ti">Timelines</a>
+        <a href="#tableaux" data-short="Tb">Tableaux</a>
+        <a href="#badges" data-short="Bg">Badges</a>
+        <a href="#cartes" data-short="Ca">Cartes</a>
+        <p class="nav-label">5. Formulaires</p>
+        <a href="#champs-formulaire" data-short="F">Champs et libellés</a>
+        <a href="#etats-formulaire" data-short="Ét">Erreurs et disponibilité</a>
+        <a href="#formulaire-complet" data-short="Fc">Formulaire complet</a>
+        <p class="nav-label">6. Interactions</p>
+        <a href="#boutons" data-short="B">Boutons</a>
+        <a href="#accordeon" data-short="Ac">Accordéon</a>
+        <a href="#onglets" data-short="On">Onglets</a>
+        <a href="#modales" data-short="Mo">Modales</a>
+        <a href="#alertes" data-short="A">Alertes</a>
+        <a href="#notifications" data-short="No">Notifications</a>
+        <a href="#infobulles" data-short="In">Infobulles</a>
+        <a href="#popovers" data-short="Po">Popovers</a>
+        <p class="nav-label">7. Pédagogie</p>
+        <a href="#blocs-pedagogiques" data-short="É">Blocs pédagogiques</a>
+        <a href="#blocs-code" data-short="Co">Blocs de code</a>
+      </nav>
+      <div class="sidebar-footer">
+        <span data-copyright>© 2026 3iL Programmes Experts</span>
+      </div>
+    </aside>
+
+    <main id="main-content">
+
+      <div id="introduction" class="section-divider" role="heading" aria-level="2"><span>01</span><strong>Introduction</strong></div>
+
+      <section class="hero doc-section" id="presentation" data-search="introduction démarrer accueil">
+        <div class="hero-copy">
+          <p class="eyebrow">Bibliothèque numérique 3iL</p>
+          <h1>Concevoir juste.<br><span>Enseigner mieux.</span></h1>
+          <p class="lead">Les styles et composants 3iL pour créer vos sites et supports pédagogiques HTML. Consultez les exemples, testez leurs interactions et réutilisez leur code dans vos projets.</p>
+          <p>Pour intégrer un exemple, reprenez son HTML, les styles correspondants dans <code>styles.css</code> et, si nécessaire, son JavaScript. Conservez les polices et logos utilisés depuis <code>assets/</code>. Le HTML seul ne suffit pas.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="#fondations">Explorer les fondations</a>
+            <a class="button button-secondary" href="#structure">Voir les composants</a>
+          </div>
+          <p class="microcopy">Les contenus de cours, dates et états présentés sont des exemples, pas des services actifs. Les formulaires n’envoient aucune donnée et les exercices ne conservent pas votre progression.</p>
+        </div>
+        <div class="hero-mark" aria-label="Aperçu des couleurs 3iL">
+          <div class="logo-plate"><img src="assets/logos/3il-horizontal-baseline.png" data-logo-light="assets/logos/3il-horizontal-baseline.png" data-logo-dark="assets/logos/3il-horizontal-white.png" alt=""></div>
+          <div class="color-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <p><strong>Une base unique</strong><span>Web · Supports pédagogiques · Applications</span></p>
+        </div>
+      </section>
+
+      <section class="doc-section intro-section" id="principes" data-search="principes accessible cohérent modulaire durable">
+        <header class="section-heading">
+          <p class="eyebrow">Principes de conception</p>
+          <h2>Clarté, accessibilité, réutilisation et évolution.</h2>
+          <p>Ces principes guident le choix des composants et leur adaptation à vos contenus.</p>
+        </header>
+        <div class="principle-grid" data-code-example>
+          <article><span>01</span><h3>Clair</h3><p>Une hiérarchie franche et des contenus faciles à parcourir.</p></article>
+          <article><span>02</span><h3>Accessible</h3><p>Préserver la navigation clavier, les noms accessibles et la structure HTML lors de chaque adaptation.</p></article>
+          <article><span>03</span><h3>Modulaire</h3><p>Assembler des composants documentés avec leurs styles et comportements associés.</p></article>
+          <article><span>04</span><h3>Évolutif</h3><p>Faire évoluer les composants à partir des besoins réels, en documentant et en testant les changements.</p></article>
+        </div>
+      </section>
+
+      <div id="fondations" class="section-divider" role="heading" aria-level="2"><span>02</span><strong>Fondations</strong></div>
+
+      <section class="doc-section" id="couleurs" data-search="couleurs palette bleu violet magenta orange turquoise tokens">
+        <header class="section-heading compact">
+          <p class="eyebrow">Fondations · Couleurs</p>
+          <h2>Une palette identifiable au premier coup d’œil.</h2>
+          <p>Cette palette fournit les couleurs de référence. Pour les appliquer à un composant, utilisez les variables CSS correspondant à son rôle : texte, fond, bordure ou état. Vérifiez le contraste dans les deux thèmes.</p>
+        </header>
+        <div class="token-grid color-grid" data-code-example>
+          <button class="color-token navy" data-copy="#005067"><span>Bleu 3iL</span><code>#005067</code></button>
+          <button class="color-token purple" data-copy="#3E338B"><span>Violet</span><code>#3E338B</code></button>
+          <button class="color-token magenta" data-copy="#B81367"><span>Magenta</span><code>#B81367</code></button>
+          <button class="color-token orange" data-copy="#E84D0D"><span>Orange</span><code>#E84D0D</code></button>
+          <button class="color-token blue" data-copy="#086694"><span>Bleu complémentaire</span><code>#086694</code></button>
+          <button class="color-token cyan" data-copy="#00A9A6"><span>Turquoise</span><code>#00A9A6</code></button>
+        </div>
+        <p class="microcopy">Cliquez sur une couleur pour copier sa valeur.</p>
+      </section>
+
+      <section class="doc-section" id="typographie" data-search="typographie titres texte montserrat bebas police">
+        <header class="section-heading compact">
+          <p class="eyebrow">Fondations · Typographie</p>
+          <h2>Montserrat au quotidien.</h2>
+          <p>La fonte de marque est embarquée pour rester disponible hors connexion. Bebas Neue Pro est réservée aux campagnes disposant de sa licence.</p>
+        </header>
+        <div class="type-specimen" data-code-example>
+          <div class="type-meta"><strong>Titre d’affiche</strong><code>clamp(3.3rem, 8vw, 7.5rem)</code></div>
+          <p class="display-sample">L’AVENIR<br><span>SE CODE ICI</span></p>
+          <div class="type-row"><div><strong>Titre de contenu</strong><code>2.4rem · hors adaptation mobile</code></div><h3>Former les talents du numérique</h3></div>
+          <div class="type-row"><div><strong>Corps</strong><code>1rem · interligne 1.75</code></div><p>Une hiérarchie de titres et des paragraphes courts facilitent la lecture d’un support de cours.</p></div>
+        </div>
+        <p class="microcopy">Ces exemples montrent des styles visuels, pas une hiérarchie de titres à copier telle quelle. Choisissez les niveaux <code>h1</code> à <code>h6</code> selon la structure de votre document, sans sauter un niveau pour obtenir une taille particulière.</p>
+      </section>
+
+      <section class="doc-section" id="liens" data-search="fondations typographie liens navigation externe téléchargement survol focus indisponible">
+        <header class="section-heading compact">
+          <p class="eyebrow">Fondations · Typographie · Liens</p>
+          <h2>Une destination explicite.</h2>
+          <p>Un lien conduit à une ressource ; un bouton déclenche une action. Le soulignement rend les liens reconnaissables sans dépendre uniquement de leur couleur.</p>
+        </header>
+        <h3>Dans un texte</h3>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <p>Pour organiser votre support, consultez les <a class="ds-link" href="#blocs-pedagogiques">blocs pédagogiques</a> et les <a class="ds-link" href="#grilles">grilles de mise en page</a>.</p>
+        </div></div>
+        <h3>Destination externe</h3>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <p><a class="ds-link" href="https://www.3il-ingenieurs.fr/" target="_blank" rel="noopener noreferrer">Consulter le site 3iL Ingénieurs <span class="ds-link__note">(nouvel onglet, connexion requise)</span></a></p>
+        </div></div>
+        <h3>Téléchargement</h3>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <p><a class="ds-link" href="assets/exemples/fiche-pedagogique.txt" download="fiche-pedagogique.txt">Télécharger la fiche pédagogique <span class="ds-link__note">(TXT)</span></a></p>
+        </div></div>
+        <h3>Ressource indisponible</h3>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <p><span class="ds-link-unavailable">Corrigé du chapitre — indisponible dans cet exemple</span></p>
+        </div></div>
+        <p class="microcopy">Survolez les liens ou utilisez Tab pour voir leurs états. Une ressource indisponible reste du texte sans faux lien ni <code>href="#"</code>. Adaptez les destinations, annoncez les nouveaux onglets et fournissez le fichier de téléchargement avec votre site. Selon le navigateur, un fichier local peut s’ouvrir au lieu d’être téléchargé. Aucun JavaScript propre au composant n’est nécessaire.</p>
+      </section>
+
+      <section class="doc-section" id="espacements" data-search="espacements grille rythme radius ombres">
+        <header class="section-heading compact">
+          <p class="eyebrow">Fondations · Espacements</p>
+          <h2>Un rythme fondé sur 4 pixels.</h2>
+        </header>
+        <div class="spacing-demo" aria-label="Échelle des espacements" data-code-example>
+          <div><i style="--size:4px"></i><code>4</code></div><div><i style="--size:8px"></i><code>8</code></div><div><i style="--size:12px"></i><code>12</code></div><div><i style="--size:16px"></i><code>16</code></div><div><i style="--size:24px"></i><code>24</code></div><div><i style="--size:32px"></i><code>32</code></div><div><i style="--size:48px"></i><code>48</code></div><div><i style="--size:64px"></i><code>64</code></div>
+        </div>
+      </section>
+
+      <div id="structure" class="section-divider" role="heading" aria-level="2"><span>03</span><strong>Structure</strong></div>
+
+      <section class="doc-section" id="conteneurs" data-search="structure conteneurs largeur lecture page fluide marges">
+        <header class="section-heading compact">
+          <p class="eyebrow">Structure · Conteneurs</p>
+          <h2>Donner une largeur au contenu.</h2>
+          <p>Un conteneur centre le contenu, limite sa largeur et conserve des marges intérieures. Il ne fixe jamais la hauteur. Les limites ci-dessous restent plafonnées à la largeur disponible.</p>
+        </header>
+        <h3>Lecture, page ou pleine largeur</h3>
+        <p>Lecture : 48 rem maximum pour les cours et articles. Page : 80 rem pour les interfaces. Fluide : toute la largeur du parent. Sur un écran étroit, ces variantes peuvent donc avoir la même largeur.</p>
+        <div class="demo-panel"><div class="demo-canvas layout-preview" data-code-example>
+          <div class="ds-stack">
+            <div class="ds-container ds-container--reading"><div class="layout-sample">Lecture · 48 rem maximum</div></div>
+            <div class="ds-container"><div class="layout-sample">Page · 80 rem maximum</div></div>
+            <div class="ds-container ds-container--fluid"><div class="layout-sample">Fluide · 100 % du parent</div></div>
+          </div>
+        </div></div>
+        <h3>Personnaliser localement</h3>
+        <p>Utilisez <code>--ds-container-max</code> et <code>--ds-gutter</code> pour un besoin particulier, sans modifier la largeur de toutes les pages.</p>
+        <div class="demo-panel"><div class="demo-canvas layout-preview" data-code-example>
+          <div class="ds-container" style="--ds-container-max: 36rem; --ds-gutter: 1rem;">
+            <div class="layout-sample">Un contenu limité à 36 rem, avec 1 rem de marge intérieure.</div>
+          </div>
+        </div></div>
+      </section>
+
+      <section class="doc-section" id="grilles" data-search="structure grilles colonnes responsive automatique stack cluster panneau latéral">
+        <header class="section-heading compact">
+          <p class="eyebrow">Structure · Grilles</p>
+          <h2>Assembler sans rigidifier.</h2>
+          <p>Les grilles s’adaptent à leur espace disponible, y compris lorsque la barre latérale est déployée. Le conteneur <code>ds-layout</code> définit cet espace de référence. L’ordre de lecture reste celui du HTML.</p>
+        </header>
+        <h3>Deux colonnes</h3>
+        <p>Pour comparer deux contenus de même importance. Une colonne sous 28 rem de largeur disponible.</p>
+        <div class="demo-panel"><div class="demo-canvas layout-preview" data-code-example>
+          <div class="ds-layout"><div class="ds-grid ds-grid--2">
+            <div class="layout-sample">01 · Objectifs</div>
+            <div class="layout-sample">02 · Prérequis</div>
+          </div></div>
+        </div></div>
+        <h3>Trois colonnes</h3>
+        <p>Pour les ressources ou les cartes. Trois colonnes au-delà de 40 rem, deux entre 28 et 40 rem, puis une seule.</p>
+        <div class="demo-panel"><div class="demo-canvas layout-preview" data-code-example>
+          <div class="ds-layout"><div class="ds-grid ds-grid--3">
+            <div class="layout-sample">01 · Comprendre</div>
+            <div class="layout-sample">02 · Pratiquer</div>
+            <div class="layout-sample">03 · Évaluer</div>
+          </div></div>
+        </div></div>
+        <h3>Quatre colonnes</h3>
+        <p>Pour des contenus courts : quatre colonnes au-delà de 40 rem, deux entre 28 et 40 rem, puis une seule. Évitez les longs paragraphes dans cette variante.</p>
+        <div class="demo-panel"><div class="demo-canvas layout-preview" data-code-example>
+          <div class="ds-layout"><div class="ds-grid ds-grid--4">
+            <div class="layout-sample">01</div><div class="layout-sample">02</div>
+            <div class="layout-sample">03</div><div class="layout-sample">04</div>
+          </div></div>
+        </div></div>
+        <h3>Grille automatique</h3>
+        <p>Le nombre de colonnes dépend de la place disponible. La largeur minimale souhaitée se règle avec <code>--ds-grid-min</code> ; elle ne provoque pas de débordement sur mobile.</p>
+        <div class="demo-panel"><div class="demo-canvas layout-preview" data-code-example>
+          <div class="ds-grid ds-grid--auto" style="--ds-grid-min: 12rem;">
+            <div class="layout-sample">Ressource 1</div><div class="layout-sample">Ressource 2</div>
+            <div class="layout-sample">Ressource 3</div><div class="layout-sample">Ressource 4</div>
+            <div class="layout-sample">Ressource 5</div>
+          </div>
+        </div></div>
+        <h3>Contenu et panneau latéral</h3>
+        <p>Une répartition 2/3–1/3 pour un cours et ses ressources. Sous 40 rem, le panneau passe sous le contenu, sans changer l’ordre du document.</p>
+        <div class="demo-panel"><div class="demo-canvas layout-preview" data-code-example>
+          <div class="ds-layout"><div class="ds-grid ds-grid--sidebar">
+            <article class="layout-sample"><h4>Contenu principal</h4><p>Le chapitre, ses explications et ses activités.</p></article>
+            <aside class="layout-sample" aria-label="Ressources du chapitre"><h4>Ressources</h4><p>Documents et liens associés.</p></aside>
+          </div></div>
+        </div></div>
+        <h3>Rythme vertical et groupes d’actions</h3>
+        <p><code>ds-stack</code> empile les éléments. <code>ds-cluster</code> les aligne et revient à la ligne si nécessaire. Toutes les dispositions utilisent <code>--ds-gap</code>, réglable localement.</p>
+        <div class="demo-panel"><div class="demo-canvas layout-preview" data-code-example>
+          <div class="ds-stack" style="--ds-gap: 1.5rem;">
+            <div class="layout-sample">Un contenu et ses actions associées.</div>
+            <div class="ds-cluster" style="--ds-gap: 0.75rem;">
+              <a class="button button-primary" href="#conteneurs">Consulter les conteneurs</a>
+              <a class="button button-secondary" href="#grilles">Consulter les grilles</a>
+            </div>
+          </div>
+        </div></div>
+        <p class="microcopy">Les surfaces colorées <code>layout-sample</code> servent uniquement à rendre la disposition visible dans cette documentation. Remplacez-les par vos propres composants. Les styles de structure se trouvent dans <code>styles.css</code>.</p>
+      </section>
+
+      <section class="doc-section" id="hero-institutionnel" data-search="structure hero institutionnel accueil introduction bannière formation">
+        <header class="section-heading compact">
+          <p class="eyebrow">Structure · Hero institutionnel</p>
+          <h2>Donner le cap dès l’entrée.</h2>
+          <p>Un contexte, un titre et une action principale. Le hero introduit une page sans repousser inutilement son contenu. Ces deux variantes fonctionnent sans JavaScript.</p>
+        </header>
+        <h3>Accueil institutionnel</h3>
+        <p>Une composition en deux zones : le message et une signature de marque. Les zones s’empilent quand la largeur disponible diminue. Les textes ci-dessous illustrent une mise en page ; adaptez-les à votre formation et faites valider vos messages institutionnels.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <div class="ds-institutional-hero">
+            <div class="ds-institutional-hero__layout">
+              <div class="ds-institutional-hero__copy">
+                <p class="ds-institutional-hero__eyebrow">3iL · Programmes Experts</p>
+                <h3 class="ds-institutional-hero__title">Construisez votre avenir dans le numérique.</h3>
+                <p class="ds-institutional-hero__lead">Des connaissances aux projets, développez vos compétences et donnez une nouvelle dimension à votre parcours.</p>
+                <div class="ds-cluster">
+                  <a class="button button-primary" href="#pedagogie">Explorer les ressources pédagogiques</a>
+                  <a class="button button-secondary" href="#principes">Découvrir notre approche</a>
+                </div>
+              </div>
+              <div class="ds-institutional-hero__signature">
+                <img src="assets/logos/3il-horizontal-white.png" alt="3iL Ingénieurs">
+                <p>Comprendre.<br>Expérimenter.<br>Progresser.</p>
+                <span>Le numérique, en pratique.</span>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <h3>Entrée de cours, format compact</h3>
+        <p>Sans signature latérale, pour introduire une ressource ou un support pédagogique. Les informations de contexte restent une liste, pas une série de boutons.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <div class="ds-institutional-hero ds-institutional-hero--compact">
+            <div class="ds-institutional-hero__copy">
+              <p class="ds-institutional-hero__eyebrow">Ressource pédagogique · Exemple</p>
+              <h3 class="ds-institutional-hero__title">Concevoir des interfaces accessibles.</h3>
+              <p class="ds-institutional-hero__lead">Structurez vos contenus et facilitez la navigation pour rendre vos supports plus simples à utiliser.</p>
+              <ul class="ds-institutional-hero__meta" aria-label="Informations sur la ressource">
+                <li>Initiation</li>
+                <li>Lecture et mise en pratique</li>
+                <li>À votre rythme</li>
+              </ul>
+              <div class="ds-cluster">
+                <a class="button button-primary" href="#blocs-pedagogiques">Consulter les blocs pédagogiques</a>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <p class="microcopy">Les titres des exemples sont des <code>h3</code> pour respecter cette page. Sur une page d’accueil, utilisez un <code>h1</code> avec la même classe. Adaptez les textes et destinations des liens. La signature conserve un fond bleu et le logo blanc dans les deux thèmes. Copiez les styles <code>ds-institutional-hero</code>, les boutons, <code>ds-cluster</code>, les jetons et le logo ; aucun script de changement de logo n’est requis.</p>
+      </section>
+
+      <div id="contenu" class="section-divider" role="heading" aria-level="2"><span>04</span><strong>Contenu</strong></div>
+
+      <section class="doc-section" id="listes" data-search="contenu listes puces numérotées imbriquées définitions étapes checklist">
+        <header class="section-heading compact">
+          <p class="eyebrow">Contenu · Listes structurées</p>
+          <h2>Organiser les informations.</h2>
+          <p>Utilisez des puces lorsque l’ordre est libre, des numéros lorsque la séquence compte, et une liste de définitions pour associer des termes à leurs explications. Aucun JavaScript n’est nécessaire.</p>
+        </header>
+        <h3>Liste à puces et niveaux imbriqués</h3>
+        <p>Conservez une hiérarchie courte. Une sous-liste appartient toujours à un élément <code>li</code>, jamais directement à la liste parente.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <ul class="ds-list">
+            <li>Consulter les ressources du chapitre.</li>
+            <li>Préparer votre environnement :
+              <ul class="ds-list">
+                <li>Un navigateur à jour.</li>
+                <li>Les fichiers du cours disponibles hors ligne.</li>
+              </ul>
+            </li>
+            <li>Réaliser les exercices proposés.</li>
+          </ul>
+        </div></div>
+        <h3>Liste numérotée</h3>
+        <p>Les numéros sont natifs : l’attribut <code>start</code> permet de poursuivre une séquence sans saisir les numéros dans le texte.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <ol class="ds-list" start="3">
+            <li>Comparer les solutions proposées.</li>
+            <li>Justifier votre choix.</li>
+            <li>Présenter les limites de votre démarche.</li>
+          </ol>
+        </div></div>
+        <h3>Liste compacte</h3>
+        <p>Pour une courte liste de prérequis ou de métadonnées, sans sacrifier la lisibilité.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <ul class="ds-list ds-list--compact">
+            <li>Niveau : débutant.</li>
+            <li>Durée : 45 minutes.</li>
+            <li>Support : cours et exercices.</li>
+          </ul>
+        </div></div>
+        <h3>Liste avec séparateurs</h3>
+        <p>Pour des éléments éditoriaux plus riches. Les puces restent présentes pour identifier clairement la liste.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <ul class="ds-list ds-list--divided">
+            <li><strong>Comprendre</strong><p>Identifier les notions et les objectifs du chapitre.</p></li>
+            <li><strong>Appliquer</strong><p>Mettre les connaissances en pratique dans un exercice.</p></li>
+            <li><strong>Approfondir</strong><p>Consulter les ressources complémentaires.</p></li>
+          </ul>
+        </div></div>
+        <h3>Termes et définitions</h3>
+        <p>Les éléments <code>dt</code> et <code>dd</code> associent chaque terme à sa définition. La disposition passe automatiquement sur une colonne lorsque la place manque.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <dl class="ds-definitions">
+            <div><dt>Composant</dt><dd>Élément d’interface réutilisable avec des règles de présentation et de comportement.</dd></div>
+            <div><dt>Jeton</dt><dd>Valeur partagée pour une couleur, un espacement ou une dimension.</dd></div>
+            <div><dt>Variante</dt><dd>Déclinaison documentée d’un composant pour un usage précis.</dd></div>
+          </dl>
+        </div></div>
+        <h3>Étapes d’une méthode</h3>
+        <p>Une séquence de travail, et non une chronologie datée. Les titres et descriptions restent dans l’ordre de lecture du document.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <ol class="ds-list ds-list--steps">
+            <li><strong>Analyser le besoin</strong><p>Définissez le problème et les contraintes.</p></li>
+            <li><strong>Construire une solution</strong><p>Réutilisez les composants adaptés au contexte.</p></li>
+            <li><strong>Vérifier le résultat</strong><p>Contrôlez le fonctionnement, la lisibilité et l’accessibilité.</p></li>
+          </ol>
+        </div></div>
+        <h3>Checklist interactive</h3>
+        <p>Les cases natives se cochent à la souris ou avec la touche Espace après Tab. Le texte barré complète l’état coché, sans remplacer son annonce accessible. Les choix de cette démonstration ne sont pas enregistrés par l’application.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <fieldset class="ds-checklist">
+            <legend>Avant de rendre votre travail</legend>
+            <ul role="list">
+              <li><label><input type="checkbox" checked><span>Relire les consignes.</span></label></li>
+              <li><label><input type="checkbox"><span>Vérifier les sources utilisées.</span></label></li>
+              <li><label><input type="checkbox"><span>Tester le rendu sur un petit écran.</span></label></li>
+              <li><label><input type="checkbox" disabled><span>Validation par l’équipe pédagogique (indisponible ici).</span></label></li>
+            </ul>
+          </fieldset>
+        </div></div>
+      </section>
+
+      <section class="doc-section" id="timelines" data-search="contenu timeline chronologie dates parcours étapes progression">
+        <header class="section-heading compact">
+          <p class="eyebrow">Contenu · Timelines</p>
+          <h2>Rendre le déroulement lisible.</h2>
+          <p>Une chronologie présente des événements dans le temps. Un parcours présente des étapes et leur état. Dans les deux cas, l’ordre du HTML reste l’ordre de lecture.</p>
+        </header>
+        <h3>Chronologie verticale</h3>
+        <p>Pour un calendrier pédagogique ou l’historique d’un projet. Les dates utilisent <code>time</code> et un attribut <code>datetime</code> exploitable par les outils.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <ol class="ds-timeline" role="list" aria-label="Calendrier pédagogique de démonstration">
+            <li><time datetime="2026-09-07">7 septembre 2026</time><h4>Découvrir le module</h4><p>Présentation des objectifs et des ressources disponibles.</p></li>
+            <li><time datetime="2026-09-14">14 septembre 2026</time><h4>Mettre en pratique</h4><p>Atelier accompagné et échanges autour des premières réalisations.</p></li>
+            <li><time datetime="2026-09-21">21 septembre 2026</time><h4>Présenter les résultats</h4><p>Restitution du travail et retour pédagogique.</p></li>
+          </ol>
+        </div></div>
+        <h3>Parcours avec états</h3>
+        <p>Une présentation informative, pas un menu : les étapes ne sont pas cliquables. Les libellés « Terminé », « En cours » et « À venir » complètent la couleur. Une seule étape porte <code>aria-current="step"</code>.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <ol class="ds-timeline ds-timeline--journey" role="list" aria-label="Exemple de parcours pédagogique">
+            <li data-state="done"><span class="ds-timeline-state">Terminé</span><h4>1. Comprendre</h4><p>Consulter les notions essentielles.</p></li>
+            <li data-state="current" aria-current="step"><span class="ds-timeline-state">En cours</span><h4>2. Pratiquer</h4><p>Réaliser les exercices du chapitre.</p></li>
+            <li data-state="upcoming"><span class="ds-timeline-state">À venir</span><h4>3. Évaluer</h4><p>Faire le point sur les acquis.</p></li>
+          </ol>
+        </div></div>
+      </section>
+
+      <section class="doc-section" id="tableaux" data-search="contenu tableaux données comparatif responsive colonnes lignes">
+        <header class="section-heading compact">
+          <p class="eyebrow">Contenu · Tableaux</p>
+          <h2>Comparer sans perdre le contexte.</h2>
+          <p>Réservez les tableaux aux données reliées par des lignes et des colonnes. Chaque exemple possède une légende et des en-têtes explicites. Les styles ne fournissent ni tri ni filtrage.</p>
+        </header>
+        <h3>Tableau simple</h3>
+        <p id="table-simple-help">Si le tableau dépasse la largeur disponible, faites-le défiler horizontalement. Au clavier, placez le focus sur le cadre puis utilisez les flèches.</p>
+        <div class="demo-panel"><div class="demo-canvas layout-preview" data-code-example>
+          <div class="ds-table-scroll" role="region" aria-labelledby="table-simple-caption" aria-describedby="table-simple-help" tabindex="0">
+            <table class="ds-table">
+              <caption id="table-simple-caption">Exemple de programme pédagogique</caption>
+              <thead><tr><th scope="col">Module</th><th scope="col">Format</th><th scope="col" class="ds-table-number">Durée</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Fondations HTML</th><td>Cours et exercices</td><td class="ds-table-number">2 h</td></tr>
+                <tr><th scope="row">Mise en page CSS</th><td>Atelier</td><td class="ds-table-number">3 h</td></tr>
+                <tr><th scope="row">Interactions JavaScript</th><td>Projet accompagné</td><td class="ds-table-number">4 h</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div></div>
+        <h3>Tableau comparatif et lignes alternées</h3>
+        <p id="table-compare-help">Utilisez des réponses textuelles plutôt que des symboles seuls. Le défilement horizontal préserve les relations entre les critères et les formats.</p>
+        <div class="demo-panel"><div class="demo-canvas layout-preview" data-code-example>
+          <div class="ds-table-scroll" role="region" aria-labelledby="table-compare-caption" aria-describedby="table-compare-help" tabindex="0">
+            <table class="ds-table ds-table--striped">
+              <caption id="table-compare-caption">Comparaison indicative de trois supports</caption>
+              <thead><tr><th scope="col">Critère</th><th scope="col">Cours HTML local</th><th scope="col">Document PDF</th><th scope="col">Atelier présentiel</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Consultation hors ligne</th><td>Oui, fichiers embarqués</td><td>Oui, après téléchargement</td><td>Selon les supports</td></tr>
+                <tr><th scope="row">Exercices interactifs</th><td>Possibles</td><td>Limités selon le document</td><td>Accompagnés</td></tr>
+                <tr><th scope="row">Échanges en direct</th><td>Non intégrés</td><td>Non intégrés</td><td>Oui</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div></div>
+        <p class="microcopy">Lors de la réutilisation, rendez les identifiants de légende uniques et conservez une cible existante pour chaque attribut ARIA. Vous pouvez omettre <code>aria-describedby</code> si vous ne reprenez pas le texte d’aide.</p>
+      </section>
+
+      <section class="doc-section component-section" id="badges" data-search="badges statut tags nouveau">
+        <header class="component-heading"><div><p class="eyebrow">Contenu · Métadonnées</p><h2>Badges</h2></div></header>
+        <p>Un badge indique une catégorie ou un état court. Son texte doit rester compréhensible sans la couleur. Il ne remplace ni un bouton ni un message d’erreur détaillé.</p>
+        <div class="demo-panel"><div class="demo-canvas badge-row" data-code-example><span class="badge badge-navy">Information</span><span class="badge badge-green">Validé</span><span class="badge badge-orange">À vérifier</span><span class="badge badge-magenta">Important</span></div></div>
+      </section>
+
+      <section class="doc-section component-section" id="cartes" data-search="cartes cours formation ressource contenu">
+        <header class="component-heading"><div><p class="eyebrow">Contenu · Cartes</p><h2>Cartes</h2></div></header>
+        <p>Regroupez un titre, une courte description et un lien vers une même ressource. Ces cartes conduisent à des sections de ce catalogue.</p>
+        <div class="card-grid" data-code-example><article class="content-card"><div class="card-accent orange-accent"></div><span class="badge badge-orange">Pédagogie</span><h3>Blocs pédagogiques</h3><p>Présenter les objectifs, définir une notion, rappeler une méthode et vérifier la compréhension.</p><footer><span>4 exemples</span><a href="#blocs-pedagogiques">Découvrir les blocs pédagogiques <span aria-hidden="true">→</span></a></footer></article><article class="content-card"><div class="card-accent cyan-accent"></div><span class="badge badge-green">Conception</span><h3>Principes de conception</h3><p>Les repères communs pour choisir et adapter les composants à vos supports.</p><footer><span>4 principes</span><a href="#principes">Consulter les principes <span aria-hidden="true">→</span></a></footer></article></div>
+      </section>
+
+      <div id="formulaires" class="section-divider" role="heading" aria-level="2"><span>05</span><strong>Formulaires</strong></div>
+
+      <section class="doc-section" id="champs-formulaire" data-search="formulaires champs libellé aide saisie">
+        <header class="section-heading compact">
+          <p class="eyebrow">Formulaires · 01 — Anatomie</p>
+          <h2>Champs et libellés</h2>
+          <p>Un libellé visible, un contrôle et une aide si nécessaire. Commencez par ces briques, puis consultez leurs états et leur assemblage dans le formulaire complet.</p>
+        </header>
+        <h3>Champ de saisie avec aide</h3>
+        <div class="demo-panel"><div class="demo-canvas form-demo" data-code-example>
+          <label class="field">
+            <span>Adresse e-mail <small>Obligatoire</small></span>
+            <input type="email" required placeholder="prenom.nom@3il.fr" aria-describedby="field-email-help">
+            <em id="field-email-help">Saisissez une adresse avec un nom et un domaine, par exemple prenom.nom@3il.fr.</em>
+          </label>
+        </div></div>
+        <h3>Choix indépendant</h3>
+        <div class="demo-panel"><div class="demo-canvas form-demo" data-code-example>
+          <label class="check">
+            <input type="checkbox" checked>
+            <span>Recevoir les nouveautés pédagogiques</span>
+          </label>
+        </div></div>
+        <p class="microcopy">Le placeholder donne un exemple, jamais un libellé de remplacement. Les listes de choix, zones de texte et groupes radio sont présentés dans le formulaire complet.</p>
+      </section>
+
+      <section class="doc-section" id="etats-formulaire" data-search="formulaires états erreur valide lecture seule désactivé readonly disabled">
+        <header class="section-heading compact">
+          <p class="eyebrow">Formulaires · 02 — États</p>
+          <h2>Erreurs et disponibilité</h2>
+          <p>Distinguez une saisie à corriger d’un contrôle non modifiable. Le message explique toujours l’état, sans dépendre uniquement de la couleur.</p>
+        </header>
+        <h3>Erreur, puis correction</h3>
+        <p>Le code étudiant est volontairement invalide. Saisissez huit caractères alphanumériques pour voir le passage à l’état valide.</p>
+        <div class="demo-panel"><div class="demo-canvas form-demo" data-code-example>
+          <label class="field invalid" data-validated-field><span>Code étudiant</span><input type="text" value="ABC" required minlength="8" maxlength="8" pattern="[A-Za-z0-9]{8}" aria-invalid="true" aria-describedby="student-error"><em id="student-error" aria-live="polite">Saisissez les 8 caractères alphanumériques de votre identifiant.</em></label>
+        </div></div>
+        <h3>Lecture seule et désactivation</h3>
+        <p>La lecture seule conserve la sélection et le focus. Un contrôle désactivé est exclu de la soumission.</p>
+        <div class="demo-panel"><div class="demo-canvas form-demo" data-code-example>
+          <label class="field"><span>Référence · Lecture seule</span><input type="text" value="DEMO-3IL" readonly></label>
+          <label class="field"><span>Session · Indisponible</span><select disabled><option>Aucune session ouverte</option></select></label>
+          <label class="check"><input type="checkbox" disabled><span>Option indisponible</span></label>
+        </div></div>
+      </section>
+
+      <section class="doc-section" id="formulaire-complet" data-search="formulaires select textarea checkbox radio validation">
+        <header class="section-heading compact">
+          <p class="eyebrow">Formulaires · 03 — Assemblage</p>
+          <h2>Formulaire complet</h2>
+          <p>Retrouvez les champs dans un parcours cohérent : saisie, choix, validation et réinitialisation. Les erreurs apparaissent après la sortie d’un champ ou une tentative de validation, puis disparaissent à la correction.</p>
+        </header>
+        <p class="microcopy">Démonstration uniquement : aucune donnée n’est transmise ou enregistrée.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <form class="form-demo" data-ds-form>
+            <label class="field">
+              <span>Adresse e-mail · Obligatoire</span>
+              <input type="email" name="email" required autocomplete="email" aria-describedby="demo-email-error">
+              <em id="demo-email-error" data-field-error></em>
+            </label>
+            <label class="field">
+              <span>Ressource · Obligatoire</span>
+              <select name="resource" required aria-describedby="demo-resource-error">
+                <option value="">Choisissez une ressource</option>
+                <option value="course">Cours</option>
+                <option value="exercise">Exercice</option>
+              </select>
+              <em id="demo-resource-error" data-field-error></em>
+            </label>
+            <label class="field">
+              <span>Votre objectif · Obligatoire</span>
+              <textarea name="objective" rows="4" required maxlength="500" aria-describedby="demo-objective-help demo-objective-error"></textarea>
+              <em id="demo-objective-help">500 caractères maximum.</em>
+              <em id="demo-objective-error" data-field-error></em>
+            </label>
+            <fieldset class="ds-form-group">
+              <legend>Format préféré · Facultatif</legend>
+              <label class="check"><input type="radio" name="format" value="online" checked><span>Lecture en ligne</span></label>
+              <label class="check"><input type="radio" name="format" value="print"><span>Support imprimable</span></label>
+            </fieldset>
+            <fieldset class="ds-form-group">
+              <legend>Options · Facultatives</legend>
+              <label class="check"><input type="checkbox" name="examples"><span>Inclure des exemples</span></label>
+              <label class="check"><input type="checkbox" name="answers"><span>Inclure les corrigés</span></label>
+            </fieldset>
+            <div class="ds-cluster">
+              <button type="submit" class="button button-primary" data-form-submit disabled>Vérifier la saisie</button>
+              <button type="reset" class="button button-secondary">Réinitialiser</button>
+            </div>
+            <p data-form-status role="status">Cette démonstration nécessite JavaScript. Aucun envoi n’est effectué.</p>
+          </form>
+        </div></div>
+        <p class="microcopy">Copiez les styles des champs, groupes, boutons et le JavaScript ci-dessous. Conservez des identifiants uniques. Cet exemple vérifie la saisie, mais ne crée aucune ressource. Dans une application réelle, ajoutez le traitement de l’envoi et la validation côté serveur.</p>
+      </section>
+
+      <div id="interactions" class="section-divider" role="heading" aria-level="2"><span>06</span><strong>Interactions</strong></div>
+
+      <section class="doc-section component-section" id="boutons" data-search="boutons action primaire secondaire danger icône disabled">
+        <header class="component-heading"><div><p class="eyebrow">Actions</p><h2>Boutons</h2></div></header>
+        <p class="component-lead">Mettez en avant une seule action principale par zone. Réservez les variantes secondaire et discrète aux autres actions. Ces boutons illustrent les styles et ne déclenchent aucun traitement.</p>
+        <div class="demo-panel"><div class="demo-canvas button-row" data-code-example><button class="button button-primary">Action principale</button><button class="button button-secondary">Action secondaire</button><button class="button button-ghost">Action discrète</button><button class="button button-primary" disabled>Indisponible</button></div></div>
+      </section>
+
+      <section class="doc-section component-section" id="accordeon" data-search="accordéon faq disclosure questions réponses">
+        <header class="component-heading"><div><p class="eyebrow">Interactions · Contenu dépliable</p><h2>Accordéon</h2></div></header>
+        <p>Masquez les compléments, pas les informations indispensables. Chaque panneau s’ouvre et se ferme indépendamment, au clic ou avec Entrée et Espace.</p>
+        <div class="accordion" data-code-example>
+          <div class="accordion-item"><h3><button type="button" aria-expanded="true" aria-controls="answer-1">Quand utiliser un accordéon ?<span aria-hidden="true">−</span></button></h3><div id="answer-1" class="accordion-panel"><p>Pour des contenus secondaires indépendants, lorsque l’utilisateur choisit ce qu’il veut approfondir.</p></div></div>
+          <div class="accordion-item"><h3><button type="button" aria-expanded="false" aria-controls="answer-2">Peut-on en imbriquer plusieurs ?<span aria-hidden="true">+</span></button></h3><div id="answer-2" class="accordion-panel" hidden><p>Non. Une hiérarchie plus simple ou une page dédiée sera presque toujours plus claire.</p></div></div>
+        </div>
+      </section>
+
+      <section class="doc-section component-section" id="onglets" data-search="interactions onglets tab tabs panneaux clavier">
+        <header class="section-heading compact">
+          <p class="eyebrow">Interactions · Onglets</p>
+          <h2>Plusieurs vues, un même contexte.</h2>
+          <p>Pour des contenus associés, pas pour la navigation entre des pages. Les flèches gauche/droite activent les onglets ; Début et Fin atteignent le premier et le dernier. Tab conduit au panneau actif. Cette activation immédiate convient à des contenus déjà chargés.</p>
+        </header>
+        <div class="demo-panel"><div class="demo-canvas layout-preview" data-code-example>
+          <div class="ds-tabs" data-ds-tabs>
+            <div class="ds-tablist" role="tablist" aria-label="Contenus du module">
+              <button type="button" role="tab" id="module-tab-course" aria-controls="module-panel-course" aria-selected="true" tabindex="0">Cours</button>
+              <button type="button" role="tab" id="module-tab-practice" aria-controls="module-panel-practice" aria-selected="false" tabindex="-1">Exercices</button>
+              <button type="button" role="tab" id="module-tab-resources" aria-controls="module-panel-resources" aria-selected="false" tabindex="-1">Ressources</button>
+            </div>
+            <div class="ds-tabpanel" role="tabpanel" id="module-panel-course" aria-labelledby="module-tab-course" tabindex="0">
+              <h3>Comprendre les fondamentaux</h3><p>Retrouvez les objectifs, les notions essentielles et les exemples du module.</p>
+            </div>
+            <div class="ds-tabpanel" role="tabpanel" id="module-panel-practice" aria-labelledby="module-tab-practice" tabindex="0" hidden>
+              <h3>Mettre en pratique</h3><p>Commencez par identifier les contraintes, puis proposez une solution argumentée.</p>
+            </div>
+            <div class="ds-tabpanel" role="tabpanel" id="module-panel-resources" aria-labelledby="module-tab-resources" tabindex="0" hidden>
+              <h3>Approfondir</h3><p>Consultez les composants de référence pour préparer vos supports.</p><a href="#listes">Voir les listes structurées</a>
+            </div>
+          </div>
+        </div></div>
+        <p class="microcopy">Les identifiants des onglets et panneaux doivent être uniques. Copiez également le JavaScript ci-dessous, puis initialisez le composant après le chargement du HTML.</p>
+      </section>
+
+      <section class="doc-section component-section" id="modales" data-search="interactions modales dialog fenêtre dialogue focus clavier échap">
+        <header class="section-heading compact">
+          <p class="eyebrow">Interactions · Modales</p>
+          <h2>Concentrer l’attention.</h2>
+          <p>Réservez la modale à une information ou une tâche courte. Le dialogue natif isole le contenu du reste de la page et contient la navigation clavier. Échap et les boutons ferment la fenêtre, puis le focus revient au déclencheur. Le fond ne ferme pas la modale pour éviter les fermetures accidentelles.</p>
+        </header>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <button class="button button-primary" type="button" data-dialog-open="module-dialog" aria-haspopup="dialog">Ouvrir la présentation</button>
+          <dialog class="ds-dialog" id="module-dialog" aria-labelledby="module-dialog-title" aria-describedby="module-dialog-description">
+            <div class="ds-dialog-header">
+              <h3 id="module-dialog-title">Avant de commencer</h3>
+              <button class="button button-secondary" type="button" data-dialog-close autofocus>Fermer</button>
+            </div>
+            <p id="module-dialog-description">Prévoyez 30 minutes et conservez les ressources du module à portée de main.</p>
+            <ul class="ds-list"><li>Lisez les consignes.</li><li>Préparez vos fichiers de travail.</li><li>Avancez à votre rythme.</li></ul>
+            <form method="dialog" class="ds-dialog-actions">
+              <button class="button button-primary" value="understood">J’ai compris</button>
+            </form>
+          </dialog>
+        </div></div>
+        <h3>Alerte</h3>
+        <p>Une information importante à acquitter. Pour un retour non bloquant, préférez une alerte dans la page ou un toast.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <button class="button button-secondary" type="button" data-dialog-open="alert-dialog" aria-haspopup="dialog">Afficher l’alerte</button>
+          <dialog class="ds-dialog" id="alert-dialog" role="alertdialog" aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
+            <div class="ds-dialog-header"><h3 id="alert-dialog-title">Exemple : connexion interrompue</h3></div>
+            <p id="alert-dialog-description">Dans ce scénario, l’envoi des réponses est suspendu et une copie du travail est nécessaire avant de quitter la page. Cette démonstration ne détecte pas votre connexion et n’effectue aucun envoi.</p>
+            <form method="dialog" class="ds-dialog-actions">
+              <button class="button button-primary" value="understood" autofocus>J’ai compris</button>
+            </form>
+          </dialog>
+        </div></div>
+
+        <h3>Confirmation</h3>
+        <p>Demandez une décision explicite avant une action engageante. L’annulation reçoit le focus par défaut.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <button class="button button-secondary" type="button" data-dialog-open="confirm-dialog" aria-haspopup="dialog">Demander la confirmation</button>
+          <p id="confirm-dialog-result" role="status">Aucune décision pour le moment.</p>
+          <dialog class="ds-dialog" id="confirm-dialog" aria-labelledby="confirm-dialog-title" aria-describedby="confirm-dialog-description" data-dialog-result="confirm-dialog-result" data-dialog-confirmed="Confirmation reçue : remise simulée, aucun fichier envoyé." data-dialog-cancelled="Remise annulée : aucun fichier envoyé.">
+            <div class="ds-dialog-header"><h3 id="confirm-dialog-title">Remettre votre exercice ?</h3></div>
+            <p id="confirm-dialog-description">Vérifiez votre travail avant de confirmer. Cet exemple simule uniquement la décision : aucun fichier ne sera envoyé.</p>
+            <form method="dialog" class="ds-dialog-actions">
+              <button class="button button-secondary" value="cancel" autofocus>Annuler</button>
+              <button class="button button-primary" value="confirm">Confirmer la remise</button>
+            </form>
+          </dialog>
+        </div></div>
+
+        <h3>Média</h3>
+        <p>Affichez une image avec sa description et sa légende, sans quitter la page.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <button class="button button-secondary" type="button" data-dialog-open="media-dialog" aria-haspopup="dialog">Afficher le média</button>
+          <dialog class="ds-dialog ds-dialog--wide" id="media-dialog" aria-labelledby="media-dialog-title">
+            <div class="ds-dialog-header">
+              <h3 id="media-dialog-title">Signature institutionnelle</h3>
+              <button class="button button-secondary" type="button" data-dialog-close autofocus>Fermer</button>
+            </div>
+            <figure class="ds-dialog-media">
+              <div class="ds-dialog-media__surface"><img src="assets/logos/3il-horizontal-white.png" alt="3iL Ingénieurs"></div>
+              <figcaption>Logo officiel blanc présenté sur un fond bleu constant.</figcaption>
+            </figure>
+          </dialog>
+        </div></div>
+
+        <h3>Aperçu de ressource</h3>
+        <p>Consultez un extrait de ressource avant de la télécharger. Cet aperçu HTML reste disponible hors ligne.</p>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <button class="button button-secondary" type="button" data-dialog-open="preview-dialog" aria-haspopup="dialog">Prévisualiser la fiche</button>
+          <dialog class="ds-dialog ds-dialog--wide" id="preview-dialog" aria-labelledby="preview-dialog-title">
+            <div class="ds-dialog-header">
+              <h3 id="preview-dialog-title">Aperçu de la fiche pédagogique</h3>
+              <button class="button button-secondary" type="button" data-dialog-close autofocus>Fermer</button>
+            </div>
+            <article class="ds-dialog-preview">
+              <p class="eyebrow">Ressource pédagogique · Extrait</p>
+              <h4>Fiche pédagogique — Exemple 3iL</h4>
+              <p>Une trame à compléter pour préparer votre séance.</p>
+              <ul class="ds-list"><li>Titre du chapitre</li><li>Objectifs</li><li>Prérequis</li><li>Activité proposée</li><li>Critères de réussite</li><li>Ressources complémentaires</li></ul>
+            </article>
+            <div class="ds-dialog-actions"><a class="button button-primary" href="assets/exemples/fiche-pedagogique.txt" download>Télécharger la fiche exemple (.txt)</a></div>
+          </dialog>
+        </div></div>
+        <p class="microcopy">Utilisez <code>showModal()</code>, pas l’ajout manuel de <code>open</code>. Gardez un titre accessible, un bouton de fermeture visible et un identifiant unique. Ces exemples ne déclenchent aucune action métier. La confirmation expose sa décision dans <code>dialog.returnValue</code> : seule la valeur <code>confirm</code> vaut accord ; Échap annule.</p>
+      </section>
+
+      <section class="doc-section component-section" id="alertes" data-search="alertes information succès avertissement erreur">
+        <header class="component-heading"><div><p class="eyebrow">Retour système</p><h2>Alertes</h2></div></header>
+        <p>Affichez le message près du contenu concerné. Une information apporte un contexte, un succès confirme un résultat et un avertissement signale un point à vérifier. Les trois messages ci-dessous sont des exemples statiques.</p>
+        <div class="alert-stack" data-code-example><div class="alert info"><b aria-hidden="true">i</b><div><strong>À savoir</strong><p>Les fichiers de cet exemple peuvent être consultés hors ligne.</p></div></div><div class="alert success"><b aria-hidden="true">✓</b><div><strong>Exemple de confirmation</strong><p>Votre fichier a été reçu. Dans cette démonstration, aucun fichier n’a été envoyé.</p></div></div><div class="alert warning"><b aria-hidden="true">!</b><div><strong>Avant de transmettre votre travail</strong><p>Vérifiez que votre document ne contient aucune information confidentielle.</p></div></div></div>
+      </section>
+
+      <section class="doc-section" id="notifications" data-search="interactions notifications toast succès information erreur fermeture">
+        <header class="section-heading compact"><p class="eyebrow">Interactions · Notifications toast</p><h2>Confirmer sans interrompre.</h2><p>Un retour non bloquant, annoncé sans déplacer le focus. Ces exemples restent visibles jusqu’à leur fermeture : aucune limite de lecture. Une nouvelle notification remplace la précédente. Pour une erreur bloquante, préférez une modale, ou un message dans le formulaire.</p></header>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <div data-ds-notifications>
+            <div class="ds-cluster">
+              <button type="button" class="button button-primary" data-notification="success" data-message="Succès : votre exemple a été validé. Aucune donnée n’a été enregistrée.">Tester le succès</button>
+              <button type="button" class="button button-secondary" data-notification="info" data-message="Information : une ressource de démonstration est disponible.">Tester l’information</button>
+              <button type="button" class="button button-secondary" data-notification="error" data-message="Erreur simulée : la ressource n’a pas pu être chargée. Aucune requête réelle n’a été effectuée.">Tester l’erreur</button>
+            </div>
+            <div class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-notification-announcer></div>
+            <div class="ds-notification" data-notification-card hidden>
+              <p data-notification-message></p>
+              <button type="button" class="button button-secondary" data-notification-close>Fermer la notification</button>
+            </div>
+          </div>
+        </div></div>
+      </section>
+
+      <section class="doc-section" id="infobulles" data-search="interactions infobulles tooltip aide survol clavier">
+        <header class="section-heading compact"><p class="eyebrow">Interactions · Infobulles</p><h2>Une précision, pas un passage obligé.</h2><p>Aide courte et non essentielle, sans lien ni bouton à l’intérieur. L’infobulle apparaît au survol ou au focus, reste survolable et se ferme avec Échap. Sur écran tactile, toucher le bouton affiche l’aide.</p></header>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <button type="button" class="button button-secondary" data-ds-tooltip="help-duration" aria-describedby="help-duration">À propos de la durée estimée</button>
+          <span class="ds-tooltip" id="help-duration" role="tooltip" hidden>La durée inclut la lecture et les exercices. Vous pouvez avancer à votre rythme.</span>
+        </div></div>
+      </section>
+
+      <section class="doc-section" id="popovers" data-search="interactions popovers panneau contextuel actions liens">
+        <header class="section-heading compact"><p class="eyebrow">Interactions · Popovers</p><h2>Un complément à portée de main.</h2><p>Contrairement à l’infobulle, ce panneau peut contenir des actions. Il s’ouvre au clic et place le focus sur son premier contrôle, sans le piéger. Échap, le bouton Fermer, un clic extérieur ou la sortie du focus ferment le panneau.</p></header>
+        <div class="demo-panel"><div class="demo-canvas" data-code-example>
+          <button type="button" class="button button-primary" data-ds-popover="resource-popover" aria-controls="resource-popover" aria-expanded="false" aria-haspopup="dialog">Ressources associées</button>
+          <div class="ds-popover" id="resource-popover" role="dialog" aria-labelledby="resource-popover-title" tabindex="-1" hidden>
+            <h3 id="resource-popover-title">Préparer votre support</h3>
+            <p>Retrouvez les composants utiles pour structurer un chapitre.</p>
+            <ul class="ds-list"><li><a href="#listes">Listes structurées</a></li><li><a href="#tableaux">Tableaux</a></li></ul>
+            <button type="button" class="button button-secondary" data-popover-close>Fermer</button>
+          </div>
+        </div></div>
+        <p class="microcopy">Les panneaux se repositionnent dans la fenêtre au défilement et au redimensionnement. Conservez des identifiants uniques et les relations ARIA. Ces exemples sont destinés à la page, pas à l’intérieur d’une modale native.</p>
+      </section>
+
+      <div id="pedagogie" class="section-divider" role="heading" aria-level="2"><span>07</span><strong>Pédagogie</strong></div>
+
+      <section class="doc-section" id="blocs-pedagogiques" data-search="pédagogie objectif définition exemple réflexe quiz cours">
+        <header class="section-heading compact">
+          <p class="eyebrow">Composants métier</p>
+          <h2>Des blocs pensés pour apprendre.</h2>
+          <p>Annoncez les objectifs, définissez une notion, donnez un conseil et proposez une question de compréhension. Ces quatre exemples illustrent un extrait de cours ; ils ne constituent pas un chapitre complet. Le quiz fournit un retour immédiat, sans enregistrer de note.</p>
+        </header>
+        <div class="learning-grid" data-code-example>
+          <article class="learning-block objectives-block"><span>Objectifs</span><h3>À la fin de ce chapitre, vous saurez…</h3><ul><li>Identifier une donnée personnelle</li><li>Choisir la base légale adaptée</li><li>Appliquer les bons réflexes</li></ul></article>
+          <article class="learning-block definition-block"><span>Définition</span><h3>Donnée personnelle</h3><p>Toute information se rapportant à une personne physique identifiée ou identifiable.</p></article>
+          <article class="learning-block reflex-block"><span>Le réflexe 3iL</span><h3>Minimiser avant de collecter.</h3><p>Si une donnée n’est pas nécessaire, ne la demandez pas.</p></article>
+          <article class="learning-block quiz-block"><span>Question rapide</span><h3>Une adresse IP est-elle une donnée personnelle ?</h3><div class="quiz-actions"><button class="button button-light" data-answer="yes">Oui</button><button class="button button-light" data-answer="no">Non</button></div><p class="quiz-feedback" aria-live="polite"></p></article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="blocs-code" data-search="pédagogie code html css javascript copier syntaxe lignes">
+        <header class="section-heading compact">
+          <p class="eyebrow">Pédagogie · Blocs de code</p>
+          <h2>Lire, comprendre, réutiliser.</h2>
+          <p>Des extraits en texte brut, sélectionnables et jamais exécutés. Tous les langages peuvent être présentés sans configuration : seuls le contenu et la légende changent.</p>
+        </header>
+        <h3>HTML avec numéros de ligne</h3>
+        <div data-code-example>
+          <figure class="ds-code" data-ds-code data-line-numbers>
+            <figcaption id="code-html-title">HTML · Une action explicite</figcaption>
+            <button class="button button-secondary" type="button" data-code-copy hidden>Copier le code</button>
+            <pre tabindex="0" aria-labelledby="code-html-title"><code>&lt;button class="button button-primary" type="button"&gt;
+  Commencer le chapitre
+&lt;/button&gt;</code></pre>
+            <p class="ds-code__status" role="status" data-code-status></p>
+          </figure>
+        </div>
+        <h3>CSS sans numérotation</h3>
+        <div data-code-example>
+          <figure class="ds-code" data-ds-code>
+            <figcaption id="code-css-title">CSS · Un espacement local</figcaption>
+            <button class="button button-secondary" type="button" data-code-copy hidden>Copier le code</button>
+            <pre tabindex="0" aria-labelledby="code-css-title"><code>/* Personnaliser un groupe */
+.actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}</code></pre>
+            <p class="ds-code__status" role="status" data-code-status></p>
+          </figure>
+        </div>
+        <h3>JavaScript avec retour à la ligne</h3>
+        <div data-code-example>
+          <figure class="ds-code ds-code--wrap" data-ds-code>
+            <figcaption id="code-js-title">JavaScript · Préparer un message</figcaption>
+            <button class="button button-secondary" type="button" data-code-copy hidden>Copier le code</button>
+            <pre tabindex="0" aria-labelledby="code-js-title"><code>const message = "Prenez le temps de lire les consignes, puis avancez à votre rythme dans les activités proposées.";
+function accueillir(nom) {
+  return "Bienvenue " + nom;
+}</code></pre>
+            <p class="ds-code__status" role="status" data-code-status></p>
+          </figure>
+        </div>
+        <p class="microcopy">Par défaut, les lignes longues défilent horizontalement au clavier. Ajoutez <code>ds-code--wrap</code> pour les replier et <code>data-line-numbers</code> pour les numéroter. La copie conserve le texte original, sans numéros. Échappez les caractères HTML dans le fichier source et conservez des identifiants de légende uniques. Sans JavaScript, le code reste lisible et sélectionnable.</p>
+      </section>
+
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

@@ -1,0 +1,544 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/jyx0ra1s",
+    "id": "jyx0ra1s",
+    "slide": 4,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "3iL — Cours",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "masterLayoutName": "3iL — Fondations",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "3iL Programmes Experts",
+    "colors": {
+      "accent1": "#005067",
+      "accent2": "#E84D0D",
+      "accent3": "#3E338B",
+      "accent4": "#B81367",
+      "accent5": "#086694",
+      "accent6": "#00A9A6",
+      "dk1": "#122F37",
+      "lt1": "#FFFFFF",
+      "dk2": "#005067",
+      "lt2": "#EDF4F5",
+      "hlink": "#086694",
+      "folHlink": "#3E338B"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Calibri Light",
+        "eastAsianTypeface": "Calibri Light",
+        "complexScriptTypeface": "Calibri Light"
+      },
+      "minorFont": {
+        "latinTypeface": "Calibri",
+        "eastAsianTypeface": "Calibri",
+        "complexScriptTypeface": "Calibri"
+      }
+    },
+    "typefaces": [
+      "Arial",
+      "Calibri",
+      "Calibri Light"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "3iL — Cours",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/2",
+          "id": "2",
+          "name": "placeholder_2",
+          "bbox": [
+            64,
+            220,
+            1152,
+            360
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "name": "3iL — Fondations",
+      "type": "master",
+      "backgroundColor": "bg1",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/2",
+          "id": "2",
+          "name": "3iL PROGRAMMES EXPERTS",
+          "bbox": [
+            64,
+            672,
+            650,
+            20
+          ],
+          "geometry": "rect",
+          "text": "3iL PROGRAMMES EXPERTS",
+          "textPreview": "3iL PROGRAMMES EXPERTS",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "3iL PROGRAMMES EXPERTS",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Arial",
+                "color": "tx2"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "3iL PROGRAMMES EXPERTS",
+                  "fontSize": 16,
+                  "typeface": "Arial",
+                  "color": "tx2"
+                }
+              ]
+            }
+          ],
+          "lineWidth": 0
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/doj29oba",
+      "id": "6",
+      "name": "placeholder_1",
+      "bbox": [
+        64,
+        98,
+        1152,
+        110
+      ],
+      "geometry": "rect",
+      "text": "Quelques repères historiques",
+      "textPreview": "Quelques repères historiques",
+      "resolvedFontSize": 58.67,
+      "resolvedTextStyle": {
+        "fontSize": 58.67,
+        "typeface": "Calibri Light",
+        "color": "tx1",
+        "alignment": "left",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Quelques repères historiques"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Quelques repères historiques",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "accent1",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Quelques repères historiques",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "accent1",
+              "bold": true
+            }
+          ],
+          "bulletCharacter": "",
+          "lineSpacingPercent": 90000
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1cj2d8b6",
+      "id": "2",
+      "name": "placeholder_2",
+      "bbox": [
+        64,
+        220,
+        1152,
+        360
+      ],
+      "geometry": "rect",
+      "text": "1994–1995 : rapprochement des méthodes Booch, OMT et OOSE.\n\n1997 : adoption d’UML par l’OMG.\n\n2005 : UML 2.0 ; 2015 : UML 2.5.\n\n2017 : publication d’UML 2.5.1.",
+      "textPreview": "1994–1995 : rapprochement des méthodes Booch, OMT et OOSE. |  | 1997 : adoption d’UML par l’OMG. |  | 2005 : UML 2.0 ; 2015 : UML 2.5. | ...",
+      "resolvedFontSize": 37.33,
+      "resolvedTextStyle": {
+        "fontSize": 37.33,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 13,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1994–1995 : rapprochement des méthodes Booch, OMT et OOSE."
+          },
+          {
+            "index": 2,
+            "text": ""
+          },
+          {
+            "index": 3,
+            "text": ""
+          },
+          {
+            "index": 4,
+            "text": ""
+          },
+          {
+            "index": 5,
+            "text": "1997 : adoption d’UML par l’OMG."
+          },
+          {
+            "index": 6,
+            "text": ""
+          },
+          {
+            "index": 7,
+            "text": ""
+          },
+          {
+            "index": 8,
+            "text": ""
+          },
+          {
+            "index": 9,
+            "text": "2005 : UML 2.0 ; 2015 : UML 2.5."
+          },
+          {
+            "index": 10,
+            "text": ""
+          },
+          {
+            "index": 11,
+            "text": ""
+          },
+          {
+            "index": 12,
+            "text": ""
+          },
+          {
+            "index": 13,
+            "text": "2017 : publication d’UML 2.5.1."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1994–1995 : rapprochement des méthodes Booch, OMT et OOSE.",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "tx1"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1994–1995 : rapprochement des méthodes Booch, OMT et OOSE.",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "tx1"
+            }
+          ],
+          "bulletCharacter": "•",
+          "marginLeft": 228600,
+          "indent": -228600,
+          "lineSpacingPercent": 90000
+        },
+        {
+          "index": 3,
+          "text": "1997 : adoption d’UML par l’OMG.",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "tx1"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1997 : adoption d’UML par l’OMG.",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "tx1"
+            }
+          ],
+          "bulletCharacter": "•",
+          "marginLeft": 228600,
+          "indent": -228600,
+          "lineSpacingPercent": 90000
+        },
+        {
+          "index": 5,
+          "text": "2005 : UML 2.0 ; 2015 : UML 2.5.",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "tx1"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2005 : UML 2.0 ; 2015 : UML 2.5.",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "tx1"
+            }
+          ],
+          "bulletCharacter": "•",
+          "marginLeft": 228600,
+          "indent": -228600,
+          "lineSpacingPercent": 90000
+        },
+        {
+          "index": 7,
+          "text": "2017 : publication d’UML 2.5.1.",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "tx1"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2017 : publication d’UML 2.5.1.",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "tx1"
+            }
+          ],
+          "bulletCharacter": "•",
+          "marginLeft": 228600,
+          "indent": -228600,
+          "lineSpacingPercent": 90000
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/d43u50jy",
+      "id": "7",
+      "name": "Image 9",
+      "bbox": [
+        991.1,
+        14,
+        224.79,
+        64
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image2.png",
+        "contentType": "image/png",
+        "byteLength": 44099
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image2.png",
+        "contentType": "image/png",
+        "byteLength": 44099
+      }
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rm1k7yt4",
+      "id": "4",
+      "name": "01 · COMPRENDRE UML",
+      "bbox": [
+        64,
+        38,
+        860,
+        34
+      ],
+      "geometry": "rect",
+      "text": "01 · COMPRENDRE UML",
+      "textPreview": "01 · COMPRENDRE UML",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "01 · COMPRENDRE UML"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "01 · COMPRENDRE UML",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Arial",
+            "color": "accent2",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "01 · COMPRENDRE UML",
+              "fontSize": 18,
+              "typeface": "Arial",
+              "color": "accent2",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ql8jytsj",
+      "id": "5",
+      "name": "04",
+      "bbox": [
+        1154,
+        669,
+        62,
+        24
+      ],
+      "geometry": "rect",
+      "text": "04",
+      "textPreview": "04",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "04"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "04",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Arial",
+            "color": "tx2"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "04",
+              "fontSize": 18,
+              "typeface": "Arial",
+              "color": "tx2"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

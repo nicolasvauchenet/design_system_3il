@@ -1,0 +1,276 @@
+{
+  "renderer": "Graphviz via @viz-js/viz",
+  "reference": "https://www.omg.org/spec/UML/2.5.1",
+  "figures": {
+    "01-hierarchy": [
+      {
+        "id": "01-hierarchy",
+        "title": "Les 14 types de diagrammes UML"
+      }
+    ],
+    "02-symbols": [
+      {
+        "id": "02-symbols",
+        "title": "Cas d’utilisation · relations"
+      }
+    ],
+    "02-example": [
+      {
+        "id": "02-example--1",
+        "title": "Commande de repas · espace client"
+      },
+      {
+        "id": "02-example--2",
+        "title": "Commande de repas · cuisine"
+      },
+      {
+        "id": "02-example--3",
+        "title": "Commande de repas · gestion"
+      }
+    ],
+    "03-symbols": [
+      {
+        "id": "03-symbols--1",
+        "title": "Activités · choix et fusion"
+      },
+      {
+        "id": "03-symbols--2",
+        "title": "Activités · parallélisme et responsabilités"
+      }
+    ],
+    "03-example": [
+      {
+        "id": "03-example--1",
+        "title": "Commande · préparer et emballer"
+      },
+      {
+        "id": "03-example--2",
+        "title": "Commande · contrôler avant livraison"
+      },
+      {
+        "id": "03-example--3",
+        "title": "Commande · effectuer la livraison"
+      }
+    ],
+    "03-example2": [
+      {
+        "id": "03-example2",
+        "title": "Activités · synchroniser deux actions"
+      }
+    ],
+    "03-example3": [
+      {
+        "id": "03-example3",
+        "title": "Activités · partitions client et fournisseur"
+      }
+    ],
+    "03-example4": [
+      {
+        "id": "03-example4",
+        "title": "Activités · une garde sur chaque sortie"
+      }
+    ],
+    "04-example": [
+      {
+        "id": "04-example--1",
+        "title": "Commande · consultation et création"
+      },
+      {
+        "id": "04-example--2",
+        "title": "Commande · préparation"
+      },
+      {
+        "id": "04-example--3",
+        "title": "Livraison · échec (commande prête et payée)"
+      },
+      {
+        "id": "04-example--4",
+        "title": "Livraison · réussite (commande prête et payée)"
+      }
+    ],
+    "04-symbols": [
+      {
+        "id": "04-symbols--1",
+        "title": "Séquence · messages et lignes de vie"
+      },
+      {
+        "id": "04-symbols--2",
+        "title": "Séquence · alternative"
+      },
+      {
+        "id": "04-symbols--3",
+        "title": "Séquence · boucle"
+      },
+      {
+        "id": "04-symbols--4",
+        "title": "Séquence · création, exécution et destruction"
+      }
+    ],
+    "05-symbols": [
+      {
+        "id": "05-symbols--1",
+        "title": "Classes · compartiments et propriétés"
+      },
+      {
+        "id": "05-symbols--2",
+        "title": "Classes · relations et multiplicités"
+      },
+      {
+        "id": "05-symbols--3",
+        "title": "Classes · navigabilité"
+      }
+    ],
+    "05-example": [
+      {
+        "id": "05-example--1",
+        "title": "Classes · spécialiser les utilisateurs"
+      },
+      {
+        "id": "05-example--2",
+        "title": "Classes · commande et lignes de commande"
+      },
+      {
+        "id": "05-example--3",
+        "title": "Classes · services et contrats"
+      }
+    ],
+    "06a-symbols": [
+      {
+        "id": "06a-symbols",
+        "title": "Objets · un instantané du modèle"
+      }
+    ],
+    "06a-example": [
+      {
+        "id": "06a-example",
+        "title": "Objets · commande de Sophie"
+      }
+    ],
+    "06b-symbols": [
+      {
+        "id": "06b-symbols",
+        "title": "Communication · ordre et conditions"
+      }
+    ],
+    "06b-example": [
+      {
+        "id": "06b-example",
+        "title": "Communication · orchestration d’une commande"
+      }
+    ],
+    "06c-symbols": [
+      {
+        "id": "06c-symbols",
+        "title": "États · transition et choix"
+      }
+    ],
+    "06c-example": [
+      {
+        "id": "06c-example--1",
+        "title": "Commande · création et validation"
+      },
+      {
+        "id": "06c-example--2",
+        "title": "Commande · traitement parallèle"
+      },
+      {
+        "id": "06c-example--3",
+        "title": "Commande · livraison et clôture"
+      }
+    ],
+    "07-example": [
+      {
+        "id": "07-example--1",
+        "title": "Composants · menus"
+      },
+      {
+        "id": "07-example--2",
+        "title": "Composants · commande et paiement"
+      },
+      {
+        "id": "07-example--3",
+        "title": "Composants · notifications et livraison"
+      }
+    ],
+    "08-example": [
+      {
+        "id": "08-example",
+        "title": "Déploiement · chemins de communication"
+      }
+    ],
+    "09a-example": [
+      {
+        "id": "09a-example",
+        "title": "Modèle hiérarchique · extrait d’une arborescence"
+      }
+    ],
+    "09b-example": [
+      {
+        "id": "09b-example",
+        "title": "Modèle relationnel · clés et table de liaison"
+      }
+    ],
+    "09c-example": [
+      {
+        "id": "09c-example",
+        "title": "Modèle réseau · plusieurs chemins d’accès"
+      }
+    ],
+    "09d-example": [
+      {
+        "id": "09d-example",
+        "title": "Modèle document · champs variables et imbrication"
+      }
+    ],
+    "09e-example": [
+      {
+        "id": "09e-example",
+        "title": "Entité-association · vols et départs"
+      }
+    ],
+    "09f-example": [
+      {
+        "id": "09f-example--1",
+        "title": "Entité-relation · commandes en patte d’oie"
+      },
+      {
+        "id": "09f-example--2",
+        "title": "Entité-relation · préparation et livraison"
+      },
+      {
+        "id": "09f-example--3",
+        "title": "Entité-relation · catalogue et menus"
+      }
+    ],
+    "09f-symbols": [
+      {
+        "id": "09f-symbols",
+        "title": "Patte d’oie · lire la multiplicité à l’extrémité"
+      }
+    ],
+    "09g-example": [
+      {
+        "id": "09g-example",
+        "title": "Clé-valeur · une valeur par clé"
+      }
+    ],
+    "09h-example": [
+      {
+        "id": "09h-example",
+        "title": "Familles de colonnes · commandes par utilisateur"
+      }
+    ],
+    "09i-example01": [
+      {
+        "id": "09i-example01",
+        "title": "Graphe de propriétés · utilisateurs et achats"
+      }
+    ],
+    "09i-example02": [
+      {
+        "id": "09i-example02",
+        "title": "Cypher · créer le graphe de propriétés"
+      }
+    ]
+  }
+}

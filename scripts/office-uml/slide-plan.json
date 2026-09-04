@@ -1,0 +1,552 @@
+[
+  {
+    "n": 1,
+    "title": "UML",
+    "kind": "Couverture"
+  },
+  {
+    "n": 2,
+    "title": "Du besoin au modèle",
+    "kind": "Cours"
+  },
+  {
+    "n": 3,
+    "title": "Un langage commun pour concevoir",
+    "kind": "Cours",
+    "source": "Cours/01 - Présentation d'UML.md"
+  },
+  {
+    "n": 4,
+    "title": "Quelques repères historiques",
+    "kind": "Cours",
+    "source": "Cours/01 - Présentation d'UML.md"
+  },
+  {
+    "n": 5,
+    "title": "Deux familles, plusieurs questions",
+    "kind": "Cours",
+    "source": "Cours/01 - Présentation d'UML.md"
+  },
+  {
+    "n": 6,
+    "title": "Lire la classification avec esprit critique",
+    "kind": "Illustration",
+    "source": "Cours/01 - Présentation d'UML.md"
+  },
+  {
+    "n": 7,
+    "title": "Partir des objectifs des acteurs",
+    "kind": "Cours",
+    "source": "Cours/02 - Le diagramme de Cas d'Utilisation.md"
+  },
+  {
+    "n": 8,
+    "title": "Distinguer les relations",
+    "kind": "Cours",
+    "source": "Cours/02 - Le diagramme de Cas d'Utilisation.md"
+  },
+  {
+    "n": 9,
+    "title": "La notation des cas d’utilisation",
+    "kind": "Illustration",
+    "source": "Cours/02 - Le diagramme de Cas d'Utilisation.md"
+  },
+  {
+    "n": 10,
+    "title": "Analyser une commande de repas · 1/3",
+    "kind": "Illustration",
+    "source": "Cours/02 - Le diagramme de Cas d'Utilisation.md"
+  },
+  {
+    "n": 11,
+    "title": "Analyser une commande de repas · 2/3",
+    "kind": "Illustration",
+    "source": "Cours/02 - Le diagramme de Cas d'Utilisation.md"
+  },
+  {
+    "n": 12,
+    "title": "Analyser une commande de repas · 3/3",
+    "kind": "Illustration",
+    "source": "Cours/02 - Le diagramme de Cas d'Utilisation.md"
+  },
+  {
+    "n": 13,
+    "title": "Exercice · Gestion d’événements",
+    "kind": "Exercice",
+    "source": "Exercices/Énoncé/02 - Cas d'Utilisation - Exercice 1.md"
+  },
+  {
+    "n": 14,
+    "title": "Exercice · Bibliothèque en ligne",
+    "kind": "Exercice",
+    "source": "Exercices/Énoncé/02 - Cas d'utilisation - Exercice 2.md"
+  },
+  {
+    "n": 15,
+    "title": "Décrire le cheminement d’un processus",
+    "kind": "Cours",
+    "source": "Cours/03 - Le diagramme d'Activité.md"
+  },
+  {
+    "n": 16,
+    "title": "Parallélisme ou alternative ?",
+    "kind": "Cours",
+    "source": "Cours/03 - Le diagramme d'Activité.md"
+  },
+  {
+    "n": 17,
+    "title": "Les repères d’un diagramme d’activité · 1/2",
+    "kind": "Illustration",
+    "source": "Cours/03 - Le diagramme d'Activité.md"
+  },
+  {
+    "n": 18,
+    "title": "Les repères d’un diagramme d’activité · 2/2",
+    "kind": "Illustration",
+    "source": "Cours/03 - Le diagramme d'Activité.md"
+  },
+  {
+    "n": 19,
+    "title": "Préparer et livrer une commande · 1/3",
+    "kind": "Illustration",
+    "source": "Cours/03 - Le diagramme d'Activité.md"
+  },
+  {
+    "n": 20,
+    "title": "Préparer et livrer une commande · 2/3",
+    "kind": "Illustration",
+    "source": "Cours/03 - Le diagramme d'Activité.md"
+  },
+  {
+    "n": 21,
+    "title": "Préparer et livrer une commande · 3/3",
+    "kind": "Illustration",
+    "source": "Cours/03 - Le diagramme d'Activité.md"
+  },
+  {
+    "n": 22,
+    "title": "Synchroniser plusieurs actions",
+    "kind": "Illustration",
+    "source": "Cours/03 - Le diagramme d'Activité.md"
+  },
+  {
+    "n": 23,
+    "title": "Répartir les responsabilités",
+    "kind": "Illustration",
+    "source": "Cours/03 - Le diagramme d'Activité.md"
+  },
+  {
+    "n": 24,
+    "title": "Exprimer les conditions de passage",
+    "kind": "Illustration",
+    "source": "Cours/03 - Le diagramme d'Activité.md"
+  },
+  {
+    "n": 25,
+    "title": "Exercice · Planifier un événement",
+    "kind": "Exercice",
+    "source": "Exercices/Énoncé/03 - Diagramme d'Activité - Exercice 1.md"
+  },
+  {
+    "n": 26,
+    "title": "Exercice · Commander en ligne",
+    "kind": "Exercice",
+    "source": "Exercices/Énoncé/03 - Diagramme d'Activité - Exercice 2.md"
+  },
+  {
+    "n": 27,
+    "title": "Rendre explicite l’ordre des échanges",
+    "kind": "Cours",
+    "source": "Cours/04 - Le diagramme de Séquence.md"
+  },
+  {
+    "n": 28,
+    "title": "Choisir le bon type de message",
+    "kind": "Cours",
+    "source": "Cours/04 - Le diagramme de Séquence.md"
+  },
+  {
+    "n": 29,
+    "title": "Lire une interaction · 1/2",
+    "kind": "Illustration",
+    "source": "Cours/04 - Le diagramme de Séquence.md"
+  },
+  {
+    "n": 30,
+    "title": "Lire une interaction · 2/2",
+    "kind": "Illustration",
+    "source": "Cours/04 - Le diagramme de Séquence.md"
+  },
+  {
+    "n": 31,
+    "title": "Suivre une commande dans le temps · 1/4",
+    "kind": "Illustration",
+    "source": "Cours/04 - Le diagramme de Séquence.md"
+  },
+  {
+    "n": 32,
+    "title": "Suivre une commande dans le temps · 2/4",
+    "kind": "Illustration",
+    "source": "Cours/04 - Le diagramme de Séquence.md"
+  },
+  {
+    "n": 33,
+    "title": "Suivre une commande dans le temps · 3/4",
+    "kind": "Illustration",
+    "source": "Cours/04 - Le diagramme de Séquence.md"
+  },
+  {
+    "n": 34,
+    "title": "Suivre une commande dans le temps · 4/4",
+    "kind": "Illustration",
+    "source": "Cours/04 - Le diagramme de Séquence.md"
+  },
+  {
+    "n": 35,
+    "title": "Exercice · Programmer une conférence",
+    "kind": "Exercice",
+    "source": "Exercices/Énoncé/04 - Diagramme de Séquence - Exercice 1.md"
+  },
+  {
+    "n": 36,
+    "title": "Exercice · Distributeur de billets",
+    "kind": "Exercice",
+    "source": "Exercices/Énoncé/04 - Diagramme de Séquence - Exercice 2.md"
+  },
+  {
+    "n": 37,
+    "title": "Définir la structure du logiciel",
+    "kind": "Cours",
+    "source": "Cours/05 - Le diagramme de Classes.md"
+  },
+  {
+    "n": 38,
+    "title": "Lire les propriétés des membres",
+    "kind": "Cours",
+    "source": "Cours/05 - Le diagramme de Classes.md"
+  },
+  {
+    "n": 39,
+    "title": "Choisir les relations utiles",
+    "kind": "Cours",
+    "source": "Cours/05 - Le diagramme de Classes.md"
+  },
+  {
+    "n": 40,
+    "title": "La notation des classes · 1/2",
+    "kind": "Illustration",
+    "source": "Cours/05 - Le diagramme de Classes.md"
+  },
+  {
+    "n": 41,
+    "title": "La notation des classes · 2/2",
+    "kind": "Illustration",
+    "source": "Cours/05 - Le diagramme de Classes.md"
+  },
+  {
+    "n": 42,
+    "title": "Structurer la gestion des commandes",
+    "kind": "Illustration",
+    "source": "Cours/05 - Le diagramme de Classes.md"
+  },
+  {
+    "n": 43,
+    "title": "Exercice · Classes d’une plateforme",
+    "kind": "Exercice",
+    "source": "Exercices/Énoncé/05 - Diagramme de Classes - Exercice 1.md"
+  },
+  {
+    "n": 44,
+    "title": "Exercice · Classes d’une bibliothèque",
+    "kind": "Exercice",
+    "source": "Exercices/Énoncé/05 - Diagramme de Classes - Exercice 2.md"
+  },
+  {
+    "n": 45,
+    "title": "Un objet est une instance concrète",
+    "kind": "Cours",
+    "source": "Cours/06 - Les diagrammes d'Objets.md"
+  },
+  {
+    "n": 46,
+    "title": "Passer de la classe à l’instance",
+    "kind": "Illustration",
+    "source": "Cours/06 - Les diagrammes d'Objets.md"
+  },
+  {
+    "n": 47,
+    "title": "Observer une configuration d’objets",
+    "kind": "Illustration",
+    "source": "Cours/06 - Les diagrammes d'Objets.md"
+  },
+  {
+    "n": 48,
+    "title": "La communication privilégie les liens",
+    "kind": "Cours",
+    "source": "Cours/06 - Les diagrammes d'Objets.md"
+  },
+  {
+    "n": 49,
+    "title": "Les éléments d’une communication",
+    "kind": "Illustration",
+    "source": "Cours/06 - Les diagrammes d'Objets.md"
+  },
+  {
+    "n": 50,
+    "title": "Lire les échanges numérotés",
+    "kind": "Illustration",
+    "source": "Cours/06 - Les diagrammes d'Objets.md"
+  },
+  {
+    "n": 51,
+    "title": "Décrire le cycle de vie d’un objet",
+    "kind": "Cours",
+    "source": "Cours/06 - Les diagrammes d'Objets.md"
+  },
+  {
+    "n": 52,
+    "title": "États, choix et transitions",
+    "kind": "Illustration",
+    "source": "Cours/06 - Les diagrammes d'Objets.md"
+  },
+  {
+    "n": 53,
+    "title": "Examiner le cycle de vie d’une commande · 1/3",
+    "kind": "Illustration",
+    "source": "Cours/06 - Les diagrammes d'Objets.md"
+  },
+  {
+    "n": 54,
+    "title": "Examiner le cycle de vie d’une commande · 2/3",
+    "kind": "Illustration",
+    "source": "Cours/06 - Les diagrammes d'Objets.md"
+  },
+  {
+    "n": 55,
+    "title": "Examiner le cycle de vie d’une commande · 3/3",
+    "kind": "Illustration",
+    "source": "Cours/06 - Les diagrammes d'Objets.md"
+  },
+  {
+    "n": 56,
+    "title": "Exercice · Réserver un livre",
+    "kind": "Exercice",
+    "source": "Exercices/Énoncé/06 - Diagramme de Communication - Exercice.md"
+  },
+  {
+    "n": 57,
+    "title": "Exercice · États d’une réservation",
+    "kind": "Exercice",
+    "source": "Exercices/Énoncé/06 - Diagramme État-Transition - Exercice.md"
+  },
+  {
+    "n": 58,
+    "title": "Compléter UML par les données",
+    "kind": "Cours",
+    "source": "Cours/09 - Les modèles de données.md"
+  },
+  {
+    "n": 59,
+    "title": "Hiérarchique · une structure en arbre",
+    "kind": "Illustration",
+    "source": "Cours/09 - Les modèles de données.md"
+  },
+  {
+    "n": 60,
+    "title": "Relationnel · tables et clés",
+    "kind": "Illustration",
+    "source": "Cours/09 - Les modèles de données.md"
+  },
+  {
+    "n": 61,
+    "title": "Réseau · plusieurs liens possibles",
+    "kind": "Illustration",
+    "source": "Cours/09 - Les modèles de données.md"
+  },
+  {
+    "n": 62,
+    "title": "Document · des structures imbriquées",
+    "kind": "Illustration",
+    "source": "Cours/09 - Les modèles de données.md"
+  },
+  {
+    "n": 63,
+    "title": "EA et ER : une famille, des notations",
+    "kind": "Cours",
+    "source": "Cours/09 - Les modèles de données.md"
+  },
+  {
+    "n": 64,
+    "title": "Lire une notation entité-association",
+    "kind": "Illustration",
+    "source": "Cours/09 - Les modèles de données.md"
+  },
+  {
+    "n": 65,
+    "title": "Lire une notation en patte d’oie",
+    "kind": "Illustration",
+    "source": "Cours/09 - Les modèles de données.md"
+  },
+  {
+    "n": 66,
+    "title": "Exprimer les cardinalités",
+    "kind": "Illustration",
+    "source": "Cours/09 - Les modèles de données.md"
+  },
+  {
+    "n": 67,
+    "title": "Clé-valeur · accéder par une clé",
+    "kind": "Illustration",
+    "source": "Cours/09 - Les modèles de données.md"
+  },
+  {
+    "n": 68,
+    "title": "Familles de colonnes · partir des requêtes",
+    "kind": "Illustration",
+    "source": "Cours/09 - Les modèles de données.md"
+  },
+  {
+    "n": 69,
+    "title": "Graphe · nœuds, relations et propriétés",
+    "kind": "Illustration",
+    "source": "Cours/09 - Les modèles de données.md"
+  },
+  {
+    "n": 70,
+    "title": "Cypher · créer un petit graphe",
+    "kind": "Illustration",
+    "source": "Cours/09 - Les modèles de données.md"
+  },
+  {
+    "n": 71,
+    "title": "Choisir selon les opérations attendues",
+    "kind": "Cours",
+    "source": "Cours/09 - Les modèles de données.md"
+  },
+  {
+    "n": 72,
+    "title": "Exercice · Données des événements",
+    "kind": "Exercice",
+    "source": "Exercices/Énoncé/07 - Modèle Entité-Relation - Exercice 1.md"
+  },
+  {
+    "n": 73,
+    "title": "Exercice · Gestion universitaire",
+    "kind": "Exercice",
+    "source": "Exercices/Énoncé/07 - Modèle Entité-Relation - Exercice 2.md"
+  },
+  {
+    "n": 74,
+    "title": "Encapsuler pour protéger les invariants",
+    "kind": "Cours",
+    "source": "Cours/Annexe 01 - Notions avancées de POO.md"
+  },
+  {
+    "n": 75,
+    "title": "Un contrat, plusieurs comportements",
+    "kind": "Cours",
+    "source": "Cours/Annexe 01 - Notions avancées de POO.md"
+  },
+  {
+    "n": 76,
+    "title": "Interface et abstraction se complètent",
+    "kind": "Cours",
+    "source": "Cours/Annexe 01 - Notions avancées de POO.md"
+  },
+  {
+    "n": 77,
+    "title": "SOLID · responsabilités et extension",
+    "kind": "Cours",
+    "source": "Cours/Annexe 01 - Notions avancées de POO.md"
+  },
+  {
+    "n": 78,
+    "title": "SOLID · dépendre de contrats utiles",
+    "kind": "Cours",
+    "source": "Cours/Annexe 01 - Notions avancées de POO.md"
+  },
+  {
+    "n": 79,
+    "title": "Déméter · limiter les dépendances",
+    "kind": "Cours",
+    "source": "Cours/Annexe 01 - Notions avancées de POO.md"
+  },
+  {
+    "n": 80,
+    "title": "Hollywood · inverser le contrôle",
+    "kind": "Cours",
+    "source": "Cours/Annexe 01 - Notions avancées de POO.md"
+  },
+  {
+    "n": 81,
+    "title": "Déméter · un couplage à éviter",
+    "kind": "Code",
+    "source": "Cours/Annexe 01 - Notions avancées de POO.md"
+  },
+  {
+    "n": 82,
+    "title": "Déméter · une interface plus directe",
+    "kind": "Code",
+    "source": "Cours/Annexe 01 - Notions avancées de POO.md"
+  },
+  {
+    "n": 83,
+    "title": "SQL · structurer et garantir l’intégrité",
+    "kind": "Cours",
+    "source": "Cours/Annexe 02 - Bases de données SQL et NoSQL.md"
+  },
+  {
+    "n": 84,
+    "title": "Les familles de commandes SQL",
+    "kind": "Cours",
+    "source": "Cours/Annexe 02 - Bases de données SQL et NoSQL.md"
+  },
+  {
+    "n": 85,
+    "title": "Concevoir les accès aux données",
+    "kind": "Cours",
+    "source": "Cours/Annexe 02 - Bases de données SQL et NoSQL.md"
+  },
+  {
+    "n": 86,
+    "title": "NoSQL · plusieurs familles de solutions",
+    "kind": "Cours",
+    "source": "Cours/Annexe 02 - Bases de données SQL et NoSQL.md"
+  },
+  {
+    "n": 87,
+    "title": "Éviter les oppositions trop simples",
+    "kind": "Cours",
+    "source": "Cours/Annexe 02 - Bases de données SQL et NoSQL.md"
+  },
+  {
+    "n": 88,
+    "title": "Composants · organiser les services · 1/3",
+    "kind": "Illustration",
+    "source": "Cours/01 - Présentation d'UML.md"
+  },
+  {
+    "n": 89,
+    "title": "Composants · organiser les services · 2/3",
+    "kind": "Illustration",
+    "source": "Cours/01 - Présentation d'UML.md"
+  },
+  {
+    "n": 90,
+    "title": "Composants · organiser les services · 3/3",
+    "kind": "Illustration",
+    "source": "Cours/01 - Présentation d'UML.md"
+  },
+  {
+    "n": 91,
+    "title": "Déploiement · situer l’exécution",
+    "kind": "Illustration",
+    "source": "Cours/01 - Présentation d'UML.md"
+  },
+  {
+    "n": 92,
+    "title": "Un modèle doit éclairer une décision",
+    "kind": "Cours",
+    "source": "Cours/01 - Présentation d'UML.md"
+  }
+]

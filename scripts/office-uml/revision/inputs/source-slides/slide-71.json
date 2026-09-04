@@ -1,0 +1,487 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/9kvil8fy",
+    "id": "9kvil8fy",
+    "slide": 71,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "3iL — Cours",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "masterLayoutName": "3iL — Fondations",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "3iL Programmes Experts",
+    "colors": {
+      "accent1": "#005067",
+      "accent2": "#E84D0D",
+      "accent3": "#3E338B",
+      "accent4": "#B81367",
+      "accent5": "#086694",
+      "accent6": "#00A9A6",
+      "dk1": "#122F37",
+      "lt1": "#FFFFFF",
+      "dk2": "#005067",
+      "lt2": "#EDF4F5",
+      "hlink": "#086694",
+      "folHlink": "#3E338B"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Calibri Light",
+        "eastAsianTypeface": "Calibri Light",
+        "complexScriptTypeface": "Calibri Light"
+      },
+      "minorFont": {
+        "latinTypeface": "Calibri",
+        "eastAsianTypeface": "Calibri",
+        "complexScriptTypeface": "Calibri"
+      }
+    },
+    "typefaces": [
+      "Arial",
+      "Calibri",
+      "Calibri Light"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "3iL — Cours",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout2.xml/2",
+          "id": "2",
+          "name": "placeholder_2",
+          "bbox": [
+            64,
+            220,
+            1152,
+            360
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "name": "3iL — Fondations",
+      "type": "master",
+      "backgroundColor": "bg1",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/2",
+          "id": "2",
+          "name": "3iL PROGRAMMES EXPERTS",
+          "bbox": [
+            64,
+            672,
+            650,
+            20
+          ],
+          "geometry": "rect",
+          "text": "3iL PROGRAMMES EXPERTS",
+          "textPreview": "3iL PROGRAMMES EXPERTS",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "verticalAlignment": "top",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "3iL PROGRAMMES EXPERTS",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "typeface": "Arial",
+                "color": "tx2"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "3iL PROGRAMMES EXPERTS",
+                  "fontSize": 16,
+                  "typeface": "Arial",
+                  "color": "tx2"
+                }
+              ]
+            }
+          ],
+          "lineWidth": 0
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/twnex87i",
+      "id": "6",
+      "name": "placeholder_1",
+      "bbox": [
+        64,
+        98,
+        1152,
+        110
+      ],
+      "geometry": "rect",
+      "text": "Choisir selon les opérations attendues",
+      "textPreview": "Choisir selon les opérations attendues",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "fontSize": 18.67,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Choisir selon les opérations attendues"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Choisir selon les opérations attendues",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "accent1",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Choisir selon les opérations attendues",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "accent1",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5s3et87m",
+      "id": "2",
+      "name": "placeholder_2",
+      "bbox": [
+        64,
+        220,
+        1152,
+        360
+      ],
+      "geometry": "rect",
+      "text": "Clé-valeur : sessions, cache et accès directs.\n\nDocument : structures imbriquées et schéma évolutif.\n\nFamilles de colonnes : données partitionnées, requêtes prévues à la conception.\n\nGraphe : parcours de relations, recommandations et détection de motifs.",
+      "textPreview": "Clé-valeur : sessions, cache et accès directs. |  | Document : structures imbriquées et schéma évolutif. |  | Familles de colonnes : donn...",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "fontSize": 18.67,
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 7,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Clé-valeur : sessions, cache et accès directs."
+          },
+          {
+            "index": 2,
+            "text": ""
+          },
+          {
+            "index": 3,
+            "text": "Document : structures imbriquées et schéma évolutif."
+          },
+          {
+            "index": 4,
+            "text": ""
+          },
+          {
+            "index": 5,
+            "text": "Familles de colonnes : données partitionnées, requêtes prévues à la conception."
+          },
+          {
+            "index": 6,
+            "text": ""
+          },
+          {
+            "index": 7,
+            "text": "Graphe : parcours de relations, recommandations et détection de motifs."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Clé-valeur : sessions, cache et accès directs.",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "tx1"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Clé-valeur : sessions, cache et accès directs.",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "tx1"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Document : structures imbriquées et schéma évolutif.",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "tx1"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Document : structures imbriquées et schéma évolutif.",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "tx1"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "text": "Familles de colonnes : données partitionnées, requêtes prévues à la conception.",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "tx1"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Familles de colonnes : données partitionnées, requêtes prévues à la conception.",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "tx1"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "text": "Graphe : parcours de relations, recommandations et détection de motifs.",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "tx1"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Graphe : parcours de relations, recommandations et détection de motifs.",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "tx1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/xcrmx4vi",
+      "id": "7",
+      "bbox": [
+        991.1,
+        14,
+        224.79,
+        64
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image112.png",
+        "contentType": "image/png",
+        "byteLength": 44099
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image112.png",
+        "contentType": "image/png",
+        "byteLength": 44099
+      }
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7ulwvyps",
+      "id": "4",
+      "name": "09 · MODÈLES DE DONNÉES",
+      "bbox": [
+        64,
+        38,
+        860,
+        34
+      ],
+      "geometry": "rect",
+      "text": "09 · MODÈLES DE DONNÉES",
+      "textPreview": "09 · MODÈLES DE DONNÉES",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18.67,
+        "verticalAlignment": "top",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "09 · MODÈLES DE DONNÉES"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "09 · MODÈLES DE DONNÉES",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Arial",
+            "color": "accent2",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "09 · MODÈLES DE DONNÉES",
+              "fontSize": 18,
+              "typeface": "Arial",
+              "color": "accent2",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6tcfmt87",
+      "id": "5",
+      "name": "71",
+      "bbox": [
+        1154,
+        669,
+        62,
+        24
+      ],
+      "geometry": "rect",
+      "text": "71",
+      "textPreview": "71",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18.67,
+        "verticalAlignment": "top",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "71"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "71",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Arial",
+            "color": "tx2"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "71",
+              "fontSize": 18,
+              "typeface": "Arial",
+              "color": "tx2"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}
